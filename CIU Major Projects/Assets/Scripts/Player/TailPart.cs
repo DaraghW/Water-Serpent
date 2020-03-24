@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class TailPart : MonoBehaviour
 {
-    public float maxUpTime;
     public float upTimer;
 
-    // Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
         upTimer -= 1 * Time.deltaTime;

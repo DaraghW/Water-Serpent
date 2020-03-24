@@ -6,7 +6,7 @@ public class PlayerMov : MonoBehaviour
 {
     public float moveSpeed;
 
-    //public float length;
+    public int maxLength;
     public float timer;
     public float maxTimer;
 
@@ -67,7 +67,7 @@ public class PlayerMov : MonoBehaviour
     {
         if(collision.gameObject.tag == "Tail")
         {
-            Destroy(gameObject);
+            Debug.Log("oof");
         }
     }
 }

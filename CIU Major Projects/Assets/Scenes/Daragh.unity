@@ -378,8 +378,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  maxLength: 5
   timer: 0
-  maxTimer: 0.05
+  maxTimer: 0.1
   tailStart: {fileID: 1609075310}
   tailPart: {fileID: 2288903646595463400, guid: 7ec88eb173eb8fc45a6a0b85830932ba,
     type: 3}
