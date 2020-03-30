@@ -357,7 +357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955854718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0007081, y: -0.13610955, z: -2.9091797}
+  m_LocalPosition: {x: -8.44, y: -0.13610955, z: -2.9091797}
   m_LocalScale: {x: 3.5916, y: 3.5916, z: 3.5916}
   m_Children:
   - {fileID: 537598154}
@@ -378,7 +378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  maxLength: 5
+  turnDelay: 0.1
+  maxLength: 2
   timer: 0
   maxTimer: 0.1
   tailStart: {fileID: 1609075310}
