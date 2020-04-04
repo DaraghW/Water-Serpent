@@ -8,8 +8,9 @@ public class PlayerMov : MonoBehaviour
     public float turnDelay;
     private bool canTurn;
 
-    public int maxLength;
-    private bool canMakeTail;
+    //public int maxLength;
+    public float delTime;
+    public float maxDelTime;
     public float timer;
     public float maxTimer;
 
@@ -73,25 +74,18 @@ public class PlayerMov : MonoBehaviour
         
         
         timer -= 1 * Time.deltaTime;
-        if (GameObject.FindGameObjectsWithTag("Tail").Length >= maxLength)
-        {
-            canMakeTail = true;
-            //Debug.Log("make tail");
-        }
-
-        if (timer <= 0 && canMakeTail == true)
+        if (timer <= 0)
         {
             Instantiate(tailPart, tailStart.position, Quaternion.identity);
             timer = maxTimer;
-            Debug.Log(GameObject.FindGameObjectsWithTag("Tail").Length);
         }
 
-        //if (GameObject.FindGameObjectsWithTag("Tail").Length <= maxLength && timer <= 0)
-        //{
-        //    Instantiate(tailPart, tailStart.position, Quaternion.identity);
-        //    timer = maxTimer;
-        //    Debug.Log(GameObject.FindGameObjectsWithTag("Tail").Length);
-        //}
+        delTime -= 1 * Time.deltaTime;
+        if(delTime <= 0)
+        {
+            Destroy(GameObject.FindWithTag("Tail"));
+            delTime = maxDelTime;
+        }
 
         Debug.Log(GameObject.FindGameObjectsWithTag("Tail").Length); 
     }
@@ -108,7 +102,7 @@ public class PlayerMov : MonoBehaviour
     {
         if(collision.gameObject.tag == "Cockroach")
         {
-            maxLength += 1;
+            //maxLength += 1;
         }
     }
 }

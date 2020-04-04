@@ -9,10 +9,10 @@ public class TailPart : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        upTimer -= 1 * Time.deltaTime;
-        if (upTimer <= 0)
-        {
-            Destroy(gameObject);
-        }
+        //upTimer -= 1 * Time.deltaTime;
+        //if (upTimer <= 0)
+        //{
+        //    Destroy(gameObject);
+        //}
     }
 }
