@@ -380,8 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   turnDelay: 0.1
-  delTime: 0
-  maxDelTime: 0.38
+  maxLength: 5
   timer: 0.1
   maxTimer: 0.1
   tailStart: {fileID: 1609075310}

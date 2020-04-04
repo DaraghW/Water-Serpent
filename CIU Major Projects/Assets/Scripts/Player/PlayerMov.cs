@@ -8,9 +8,7 @@ public class PlayerMov : MonoBehaviour
     public float turnDelay;
     private bool canTurn;
 
-    //public int maxLength;
-    public float delTime;
-    public float maxDelTime;
+    public float maxLength;
     public float timer;
     public float maxTimer;
 
@@ -80,14 +78,11 @@ public class PlayerMov : MonoBehaviour
             timer = maxTimer;
         }
 
-        delTime -= 1 * Time.deltaTime;
-        if(delTime <= 0)
+        Debug.Log(GameObject.FindGameObjectsWithTag("Tail").Length);
+        if (GameObject.FindGameObjectsWithTag("Tail").Length >= maxLength)
         {
             Destroy(GameObject.FindWithTag("Tail"));
-            delTime = maxDelTime;
         }
-
-        Debug.Log(GameObject.FindGameObjectsWithTag("Tail").Length); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
