@@ -8,19 +8,14 @@ public class PlayerMov : MonoBehaviour
     public float turnDelay;
     private bool canTurn;
 
-    public float maxLength;
+    public float maxTailLength;
+    public float maxWaterLength;
     public float timer;
     public float maxTimer;
 
     public Transform tailStart;
     public GameObject tailPart;
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    public GameObject water;
 
     // Update is called once per frame
     void Update()
@@ -70,18 +65,23 @@ public class PlayerMov : MonoBehaviour
         }
 
         
-        
+        //MAKE TAIL PARTS
         timer -= 1 * Time.deltaTime;
         if (timer <= 0)
         {
             Instantiate(tailPart, tailStart.position, Quaternion.identity);
+
+            Instantiate(water, tailStart.position, Quaternion.identity);
             timer = maxTimer;
         }
 
-        Debug.Log(GameObject.FindGameObjectsWithTag("Tail").Length);
-        if (GameObject.FindGameObjectsWithTag("Tail").Length >= maxLength)
+        if (GameObject.FindGameObjectsWithTag("Tail").Length >= maxTailLength)
         {
             Destroy(GameObject.FindWithTag("Tail"));
+        }
+        if (GameObject.FindGameObjectsWithTag("Water").Length >= maxWaterLength)
+        {
+            Destroy(GameObject.FindWithTag("Water"));
         }
     }
 
@@ -97,7 +97,7 @@ public class PlayerMov : MonoBehaviour
     {
         if(collision.gameObject.tag == "Cockroach")
         {
-            //maxLength += 1;
+            maxTailLength += 1;
         }
     }
 }
