@@ -98,6 +98,7 @@ public class PlayerMov : MonoBehaviour
         if(collision.gameObject.tag == "Cockroach")
         {
             maxTailLength += 1;
+            Debug.Log("kronch");
         }
     }
 }
