@@ -60,7 +60,7 @@ public class DecayScript : MonoBehaviour
             health = health - unhealthyDecay;
         }
 
-        if (health <= 0)
+        if (healthSlider.value <= 0)
         {
             loseText.text = "YOU LOSE".ToString();
         }

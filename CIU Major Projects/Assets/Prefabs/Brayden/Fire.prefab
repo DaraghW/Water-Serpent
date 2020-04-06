@@ -116,3 +116,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decay: {fileID: 0}
   decayRate: 1
+  myRb: {fileID: 366207723507426452}
+  myFire: {fileID: 7509759631618934979}
+  i: 0
+  fireRate: 15
+  nextFire: 0
+  firePercentile: 150
+  moveRate: 0
+  nextMove: 0
