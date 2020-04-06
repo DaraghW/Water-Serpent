@@ -13,15 +13,22 @@ public class PlayerMov : MonoBehaviour
     public float timer;
     public float maxTimer;
 
+    public Rigidbody2D rb;
     public Transform tailStart;
     public GameObject tailPart;
     public GameObject water;
+
+    private void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(moveSpeed, 0);
+    }
 
     // Update is called once per frame
     void Update()
     {
         //constant move        
-        transform.position += transform.right * moveSpeed * Time.deltaTime;
+        //rb.velocity = new Vector2(moveSpeed, 0);
 
         /*
         for looking at mouse
@@ -29,37 +36,42 @@ public class PlayerMov : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         */
-        
+
         //WASD controlls
         turnDelay -= 1 * Time.deltaTime;
         if (turnDelay <= 0)
         {
             canTurn = true;
         }
+        //UP
         if (Input.GetKeyDown(KeyCode.W) && transform.rotation != Quaternion.Euler(0, 0, -90) && canTurn == true)
         {
             transform.rotation = Quaternion.Euler(0, 0, 90);
+            rb.velocity = new Vector2(0,moveSpeed);
             canTurn = false;
             turnDelay = .1f;
         }
-
+        //Left
         if (Input.GetKeyDown(KeyCode.A) && transform.rotation != Quaternion.Euler(0, 0, 0) && canTurn == true)
         {
             transform.rotation = Quaternion.Euler(0, 0, 180);
+            rb.velocity = new Vector2(-moveSpeed, 0);
             canTurn = false;
             turnDelay = .1f;
         }
-
+        //Down
         if (Input.GetKeyDown(KeyCode.S) && transform.rotation != Quaternion.Euler(0, 0, 90) && canTurn == true)
         {
             transform.rotation = Quaternion.Euler(0, 0, -90);
+            rb.velocity = new Vector2(0,-moveSpeed);
             canTurn = false;
             turnDelay = .1f;
         }
-
+        //Right
         if (Input.GetKeyDown(KeyCode.D) && transform.rotation != Quaternion.Euler(0, 0, 180) && canTurn == true)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            rb.velocity = new Vector2(moveSpeed, 0);
             canTurn = false;
             turnDelay = .1f;
         }
@@ -85,20 +97,22 @@ public class PlayerMov : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Tail")
         {
             Debug.Log("oof");
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
         if(collision.gameObject.tag == "Cockroach")
         {
-            maxTailLength += 1;
-            Debug.Log("kronch");
+            Grow();
         }
+    }
+
+    void Grow()
+    {
+        maxTailLength += 1;
+        maxWaterLength += 1;
     }
 }
