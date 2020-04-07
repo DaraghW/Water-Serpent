@@ -68,7 +68,7 @@ public class PlayerMov : MonoBehaviour
             turnDelay = .1f;
         }
         //Right
-        if (Input.GetKeyDown(KeyCode.D) && transform.rotation != Quaternion.Euler(0, 0, 180) && canTurn == true)
+        if (Input.GetKeyDown(KeyCode.D) && transform.rotation != Quaternion.Euler(0, 0, -180) && canTurn == true)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
             rb.velocity = new Vector2(moveSpeed, 0);

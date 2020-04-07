@@ -300,8 +300,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   turnDelay: 0.1
-  maxTailLength: 3
-  maxWaterLength: 8
+  maxTailLength: 5
+  maxWaterLength: 10
   timer: 0.1
   maxTimer: 0.1
   rb: {fileID: 955854723}
