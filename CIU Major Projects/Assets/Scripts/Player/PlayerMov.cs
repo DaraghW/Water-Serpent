@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Daragh
 public class PlayerMov : MonoBehaviour
 {
     public float moveSpeed;
@@ -12,6 +13,9 @@ public class PlayerMov : MonoBehaviour
     public float maxWaterLength;
     public float timer;
     public float maxTimer;
+
+    float rTime;
+    float tTime;
 
     public Rigidbody2D rb;
     public Transform tailStart;
@@ -87,6 +91,27 @@ public class PlayerMov : MonoBehaviour
             timer = maxTimer;
         }
 
+        //Rat 
+        rTime -= 1 * Time.deltaTime;
+        if (rTime >= 0)
+        {
+            moveSpeed = 5;
+        }
+        if (rTime <= 0)
+        {
+            moveSpeed = 3;
+        }
+
+        tTime -= 1 * Time.deltaTime;
+        if (tTime >= 0)
+        {
+            maxWaterLength += 5;
+        }
+        if (tTime <= 0)
+        {
+           // maxWaterLength += 5;
+        }
+
         if (GameObject.FindGameObjectsWithTag("Tail").Length >= maxTailLength)
         {
             Destroy(GameObject.FindWithTag("Tail"));
@@ -108,11 +133,30 @@ public class PlayerMov : MonoBehaviour
         {
             Grow();
         }
+        if (collision.gameObject.tag == "Rat")
+        {
+            Grow();
+            Rat();
+        }
+        if (collision.gameObject.tag == "Toad")
+        {
+            Grow();
+            maxWaterLength += 3;
+        }
     }
 
     void Grow()
     {
         maxTailLength += 1;
         maxWaterLength += 1;
+    }
+
+    void Rat()
+    {
+        rTime = 3;
+    }
+    void Toad()
+    {
+        
     }
 }

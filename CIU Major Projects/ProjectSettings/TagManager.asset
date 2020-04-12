@@ -7,6 +7,8 @@ TagManager:
   - Cockroach
   - Tail
   - Water
+  - Toad
+  - Rat
   layers:
   - Default
   - TransparentFX
