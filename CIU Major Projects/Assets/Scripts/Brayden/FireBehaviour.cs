@@ -49,7 +49,7 @@ public class FireBehaviour : MonoBehaviour
     void FireSpawning()
     {
         CalculateSpawnChance();
-        Debug.Log(i);
+        //Debug.Log(i);
 
         if(i >= 100 && Time.time > nextFire)
         {

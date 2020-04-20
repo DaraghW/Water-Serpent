@@ -9,6 +9,7 @@ TagManager:
   - Water
   - Toad
   - Rat
+  - Fire
   layers:
   - Default
   - TransparentFX

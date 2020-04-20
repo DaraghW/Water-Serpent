@@ -7,6 +7,11 @@ public class SceneChange : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Brayden");
+        SceneManager.LoadScene("MainGame");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
