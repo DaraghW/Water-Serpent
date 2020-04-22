@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class FireBehaviour : MonoBehaviour
 {
+    public GameObject myGround;
     public DecayScript decay;
-    public float decayRate;
     public Rigidbody2D myRb;
     public GameObject myFire;
     public int i;
 
     public float fireRate;
     public float nextFire;
+
+    public float decayRate;
+    public float decayAmount;
+    public float nextDecay;
+
     public int firePercentile;
 
     public float moveRate;
@@ -26,16 +31,15 @@ public class FireBehaviour : MonoBehaviour
 
     void Start()
     {
-        decay = FindObjectOfType<DecayScript>();
+        decay = myGround.GetComponentInChildren<DecayScript>();
     }
 
     void Update()
     {
-        decay.health -= decayRate;
+        Decay();
         FireSpawning();
         MoveAround();
     }
-
 
     //Handles how our fire moves.
     void MoveAround()
@@ -63,5 +67,27 @@ public class FireBehaviour : MonoBehaviour
         i = Random.Range(0, firePercentile);
     }
 
+    void Decay()
+    {
+        if (decay.myHealth > 0 && Time.time > nextDecay)
+        {
+            nextDecay = Time.time + decayRate;
+            decay.myHealth -= decayAmount;
+        }
+    }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            myFire.SetActive(false);
+            LandHealth.health = LandHealth.health + 500;
+            ScoreKeeper.score = ScoreKeeper.score + 100;
+            
+            if (decay.myHealth <= 200)
+            {
+                decay.myHealth = decay.myHealth + 10;
+            }
+        }
+    }
 }

@@ -1,13 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameHandle : MonoBehaviour
 {
+    public LandHealth landHealth;
     public GameObject pausePanel;
-    public GameObject myGround;
     public GameObject[] myFire;
-    public DecayScript myDecay;
+
+    public float time;
+
+    public Text landHealthText;
+    public Text timerText;
+    public Text scoreText;
+    public Text loseText;
+    public Slider landHealthSlider;
 
     public bool IsPaused = false;
 
@@ -21,7 +30,8 @@ public class GameHandle : MonoBehaviour
 
     void Start()
     {
-        myDecay = myGround.GetComponentInChildren<DecayScript>();
+        ScoreKeeper.score = 0;
+        landHealth = GetComponent<LandHealth>();
         myStates = GameState.Unpaused;
     }
 
@@ -45,6 +55,8 @@ public class GameHandle : MonoBehaviour
                 break;
             case GameState.Unpaused:
                 Resume();
+                GameHandler();
+                UpdateUI();
                 break;
             default:
                 break;
@@ -57,20 +69,11 @@ public class GameHandle : MonoBehaviour
         myFire = GameObject.FindGameObjectsWithTag("Fire");
         Debug.Log("There are " + myFire.Length + " objects");
     }
-    void FirePause()
-    {
-        for (int i = myFire.Length - 1; i >= 0; i--)
-        {
-            myFire[i].SetActive(false);
-        }
-    }
 
     public void Pause()
     {
         Time.timeScale = 0f;
         pausePanel.SetActive(true);
-        myDecay.gameObject.SetActive(false);
-        FirePause();
         IsPaused = true;
     }
 
@@ -78,7 +81,6 @@ public class GameHandle : MonoBehaviour
     {
         Time.timeScale = 1f;
         pausePanel.SetActive(false);
-        myDecay.gameObject.SetActive(true);
         IsPaused = false;
     }
 
@@ -86,5 +88,30 @@ public class GameHandle : MonoBehaviour
     {
         myStates = GameState.Unpaused;
         IsPaused = false;
+    }
+
+    void UpdateUI()
+    {
+        timerText.text = "Time: " + time.ToString();
+        scoreText.text = "Score " + ScoreKeeper.score.ToString();
+        landHealthSlider.value = LandHealth.health;
+        landHealthText.text = LandHealth.health.ToString();
+    }
+
+    void GameHandler()
+    {
+        time = time + Time.deltaTime;
+        ScoreKeeper.score = ScoreKeeper.score + 1;
+
+        if (landHealthSlider.value <= 0)
+        {
+            loseText.text = "YOU LOSE".ToString();
+            Invoke("LoadMenu", 2f);
+        }
+    }
+
+    void LoadMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
