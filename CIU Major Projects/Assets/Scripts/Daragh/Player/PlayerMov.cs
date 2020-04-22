@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMov : MonoBehaviour
 {
     public float moveSpeed;
+    public float regSpeed;
     public float turnDelay;
     private bool canTurn;
 
@@ -53,7 +54,7 @@ public class PlayerMov : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 90);
             rb.velocity = new Vector2(0,moveSpeed);
             canTurn = false;
-            turnDelay = .1f;
+            turnDelay = .2f;
         }
         //Left
         if (Input.GetKeyDown(KeyCode.A) && transform.rotation != Quaternion.Euler(0, 0, 0) && canTurn == true)
@@ -61,7 +62,7 @@ public class PlayerMov : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 180);
             rb.velocity = new Vector2(-moveSpeed, 0);
             canTurn = false;
-            turnDelay = .1f;
+            turnDelay = .2f;
         }
         //Down
         if (Input.GetKeyDown(KeyCode.S) && transform.rotation != Quaternion.Euler(0, 0, 90) && canTurn == true)
@@ -69,7 +70,7 @@ public class PlayerMov : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, -90);
             rb.velocity = new Vector2(0,-moveSpeed);
             canTurn = false;
-            turnDelay = .1f;
+            turnDelay = .2f;
         }
         //Right
         if (Input.GetKeyDown(KeyCode.D) && transform.rotation != Quaternion.Euler(0, 0, -180) && canTurn == true)
@@ -77,7 +78,7 @@ public class PlayerMov : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 0);
             rb.velocity = new Vector2(moveSpeed, 0);
             canTurn = false;
-            turnDelay = .1f;
+            turnDelay = .2f;
         }
 
         
@@ -99,17 +100,13 @@ public class PlayerMov : MonoBehaviour
         }
         if (rTime <= 0)
         {
-            moveSpeed = 3;
+            moveSpeed = regSpeed;
         }
 
         tTime -= 1 * Time.deltaTime;
         if (tTime >= 0)
         {
             maxWaterLength += 5;
-        }
-        if (tTime <= 0)
-        {
-           // maxWaterLength += 5;
         }
 
         if (GameObject.FindGameObjectsWithTag("Tail").Length >= maxTailLength)
@@ -126,7 +123,7 @@ public class PlayerMov : MonoBehaviour
     {
         if(collision.gameObject.tag == "Tail")
         {
-            Fail();
+            //Fail();
             //Debug.Log("oof");
         }
 
@@ -155,15 +152,11 @@ public class PlayerMov : MonoBehaviour
     {
         rTime = 3;
     }
-    void Toad()
-    {
-        
-    }
 
     void Fail()
     {
         moveSpeed = 0;
-        maxTailLength = 0;
-        maxWaterLength = 0;
+        maxTailLength = 3;
+        maxWaterLength = 8;
     }
 }
