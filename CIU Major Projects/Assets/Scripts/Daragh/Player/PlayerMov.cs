@@ -126,7 +126,8 @@ public class PlayerMov : MonoBehaviour
     {
         if(collision.gameObject.tag == "Tail")
         {
-            Debug.Log("oof");
+            Fail();
+            //Debug.Log("oof");
         }
 
         if(collision.gameObject.tag == "Cockroach")
@@ -150,7 +151,6 @@ public class PlayerMov : MonoBehaviour
         maxTailLength += 1;
         maxWaterLength += 1;
     }
-
     void Rat()
     {
         rTime = 3;
@@ -158,5 +158,12 @@ public class PlayerMov : MonoBehaviour
     void Toad()
     {
         
+    }
+
+    void Fail()
+    {
+        moveSpeed = 0;
+        maxTailLength = 0;
+        maxWaterLength = 0;
     }
 }
