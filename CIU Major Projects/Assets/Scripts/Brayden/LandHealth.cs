@@ -5,4 +5,9 @@ using UnityEngine;
 public class LandHealth : MonoBehaviour
 {
     public static float health = 20000;
+
+    void Start()
+    {
+        health = 20000;
+    }
 }
