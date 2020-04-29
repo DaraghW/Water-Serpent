@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrolTest : MonoBehaviour
+public class ConsumableMovement : MonoBehaviour
 {
     public float speed;
     private float waitTime;
@@ -18,7 +18,6 @@ public class PatrolTest : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
