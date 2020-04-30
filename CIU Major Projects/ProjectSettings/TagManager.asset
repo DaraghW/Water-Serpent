@@ -4,14 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Cockroach
   - Tail
   - Water
-  - Toad
   - Rat
   - Fire
   - Ground
   - Waypoints
+  - Insect
+  - Egg
   layers:
   - Default
   - TransparentFX

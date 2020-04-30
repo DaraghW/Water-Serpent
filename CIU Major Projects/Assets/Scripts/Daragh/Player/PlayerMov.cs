@@ -127,16 +127,16 @@ public class PlayerMov : MonoBehaviour
             //Debug.Log("oof");
         }
 
-        if(collision.gameObject.tag == "Cockroach")
+        if(collision.gameObject.tag == "Egg")
         {
             Grow();
+        }
+        if (collision.gameObject.tag == "Insect")
+        {
+            Grow();
+            Insect();
         }
         if (collision.gameObject.tag == "Rat")
-        {
-            Grow();
-            Rat();
-        }
-        if (collision.gameObject.tag == "Toad")
         {
             Grow();
             maxWaterLength += 3;
@@ -148,7 +148,7 @@ public class PlayerMov : MonoBehaviour
         maxTailLength += 1;
         maxWaterLength += 1;
     }
-    void Rat()
+    void Insect()
     {
         rTime = 3;
     }
