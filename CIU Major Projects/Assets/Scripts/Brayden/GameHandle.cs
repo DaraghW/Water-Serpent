@@ -108,6 +108,11 @@ public class GameHandle : MonoBehaviour
             loseText.text = "YOU LOSE".ToString();
             Invoke("LoadMenu", 2f);
         }
+
+        if (LandHealth.health <= 0)
+        {
+            LandHealth.health = 0;
+        }
     }
 
     void LoadMenu()

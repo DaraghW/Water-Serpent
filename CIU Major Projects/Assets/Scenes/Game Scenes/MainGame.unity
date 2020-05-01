@@ -2696,13 +2696,14 @@ MonoBehaviour:
   healthyDecay: 0.06
   mediumDecay: 0.04
   unhealthyDecay: 0.02
+  landDecay: 3
   myFire:
   - {fileID: 2127661277}
   - {fileID: 1118770040}
   - {fileID: 1004597246}
   - {fileID: 1711730456}
   - {fileID: 289999784}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &642190016
 SpriteRenderer:
@@ -4427,13 +4428,14 @@ MonoBehaviour:
   healthyDecay: 0.04
   mediumDecay: 0.02
   unhealthyDecay: 0.01
+  landDecay: 3
   myFire:
   - {fileID: 1217670045}
   - {fileID: 562635037}
   - {fileID: 997384314}
   - {fileID: 1514017013}
   - {fileID: 1065852313}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &1005020833
 SpriteRenderer:
@@ -4873,13 +4875,14 @@ MonoBehaviour:
   healthyDecay: 0.1
   mediumDecay: 0.05
   unhealthyDecay: 0.02
+  landDecay: 3
   myFire:
   - {fileID: 400949875}
   - {fileID: 1411029119}
   - {fileID: 1685314538}
   - {fileID: 1352850302}
   - {fileID: 1871244988}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &1107630740
 SpriteRenderer:
@@ -5432,13 +5435,14 @@ MonoBehaviour:
   healthyDecay: 0.04
   mediumDecay: 0.02
   unhealthyDecay: 0.01
+  landDecay: 3
   myFire:
   - {fileID: 755075145}
   - {fileID: 1238097868}
   - {fileID: 470454823}
   - {fileID: 47435402}
   - {fileID: 672181916}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!1 &1238097868 stripped
 GameObject:
@@ -5927,13 +5931,14 @@ MonoBehaviour:
   healthyDecay: 0.06
   mediumDecay: 0.04
   unhealthyDecay: 0.02
+  landDecay: 3
   myFire:
   - {fileID: 1676499780}
   - {fileID: 1241484565}
   - {fileID: 1310523700}
   - {fileID: 891801934}
   - {fileID: 395545403}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &1372431045
 SpriteRenderer:
@@ -6931,13 +6936,14 @@ MonoBehaviour:
   healthyDecay: 0.06
   mediumDecay: 0.04
   unhealthyDecay: 0.02
+  landDecay: 3
   myFire:
   - {fileID: 1909236053}
   - {fileID: 1893766678}
   - {fileID: 901905312}
   - {fileID: 931517355}
   - {fileID: 2048654205}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &1515355469
 SpriteRenderer:
@@ -7622,13 +7628,14 @@ MonoBehaviour:
   healthyDecay: 0.06
   mediumDecay: 0.04
   unhealthyDecay: 0.02
+  landDecay: 3
   myFire:
   - {fileID: 1052152023}
   - {fileID: 1412074919}
   - {fileID: 1489203644}
   - {fileID: 34324702}
   - {fileID: 1702476686}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &1597212962
 SpriteRenderer:
@@ -8881,13 +8888,14 @@ MonoBehaviour:
   healthyDecay: 0.1
   mediumDecay: 0.06
   unhealthyDecay: 0.04
+  landDecay: 3
   myFire:
   - {fileID: 1402558761}
   - {fileID: 2113390687}
   - {fileID: 982012215}
   - {fileID: 1772513689}
   - {fileID: 613782937}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &1872378221
 SpriteRenderer:
@@ -9361,13 +9369,14 @@ MonoBehaviour:
   healthyDecay: 0.04
   mediumDecay: 0.02
   unhealthyDecay: 0.01
+  landDecay: 3
   myFire:
   - {fileID: 1320673136}
   - {fileID: 963585392}
   - {fileID: 1981480205}
   - {fileID: 1721361197}
   - {fileID: 1179256777}
-  fireRate: 5
+  fireRate: 10
   nextFire: 0
 --- !u!212 &1972365749
 SpriteRenderer:
@@ -9452,6 +9461,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1987881823}
+  - component: {fileID: 1987881825}
+  - component: {fileID: 1987881824}
   m_Layer: 0
   m_Name: AudioController
   m_TagString: Untagged
@@ -9473,6 +9484,115 @@ Transform:
   m_Father: {fileID: 1020103215}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1987881824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987881822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f49275c8fc019741bb09efec266eb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAudioSource: {fileID: 0}
+--- !u!82 &1987881825
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987881822}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2048654205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7509759631618934979, guid: ae280fa2a7c35a34ab68125985a92fc1,

@@ -23,6 +23,8 @@ public class DecayScript : MonoBehaviour
     public float mediumDecay;
     public float unhealthyDecay;
 
+    public int landDecay;
+
     public GameObject[] myFire;
 
     public float fireRate;
@@ -97,7 +99,7 @@ public class DecayScript : MonoBehaviour
 
     void LandDecay()
     {
-        LandHealth.health = LandHealth.health - 10;
+        LandHealth.health = LandHealth.health - landDecay;
     }
 }
   
