@@ -97,6 +97,7 @@ public class PlayerMov : MonoBehaviour
         if (rTime >= 0)
         {
             moveSpeed = 5;
+
         }
         if (rTime <= 0)
         {
@@ -130,16 +131,19 @@ public class PlayerMov : MonoBehaviour
         if(collision.gameObject.tag == "Egg")
         {
             Grow();
+            print("egg eaten");
         }
         if (collision.gameObject.tag == "Insect")
         {
             Grow();
             Insect();
+            print("bug eaten");
         }
         if (collision.gameObject.tag == "Rat")
         {
             Grow();
             maxWaterLength += 3;
+            print("rat eaten");
         }
     }
 
