@@ -12,6 +12,9 @@ TagManager:
   - Waypoints
   - Insect
   - Egg
+  - Flood
+  - LargeFire
+  - LargeFlood
   layers:
   - Default
   - TransparentFX
@@ -23,11 +26,11 @@ TagManager:
   - 
   - Player
   - PickUps
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Fire
+  - Ground
+  - Flood
+  - LargeFire
+  - LargeFlood
   - 
   - 
   - 
