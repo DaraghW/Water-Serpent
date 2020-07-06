@@ -145,8 +145,8 @@ MonoBehaviour:
   myGameObject: {fileID: 8366129188988614819}
   largeFlood: {fileID: 1675795153805224331, guid: 7a749f6e2ba6fd249ad2437bc0761b10,
     type: 3}
-  decayRate: 3
-  decayAmount: 6
+  decayRate: 2
+  decayAmount: 4
   nextDecay: 0
 --- !u!114 &-4241309240408066334
 MonoBehaviour:
