@@ -132,7 +132,6 @@ public class PlayerMov : MonoBehaviour
         {
             Grow();
             print("egg eaten");
-            Destroy(gameObject.);
         }
         if (collision.gameObject.tag == "Insect")
         {
@@ -153,7 +152,6 @@ public class PlayerMov : MonoBehaviour
         maxTailLength += 1;
         maxWaterLength += 1;
     }
-
     void Insect()
     {
         rTime = 3;
