@@ -104,6 +104,12 @@ public class GameHandle : MonoBehaviour
         IsPaused = false;
     }
 
+    public void ButtonPause()
+    {
+        myStates = GameState.Paused;
+        IsPaused = true;
+    }
+
     //Changes a bunch of the UI for the timer, score & health. Changes the value for our health slider.
     void UpdateUI()
     {

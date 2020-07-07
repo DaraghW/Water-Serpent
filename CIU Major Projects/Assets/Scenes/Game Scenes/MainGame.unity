@@ -3156,12 +3156,22 @@ PrefabInstance:
     - target: {fileID: 5243509377547393027, guid: 653e1374feef7e547a71becefb636f69,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Pause
+      value: ButtonPause
       objectReference: {fileID: 0}
     - target: {fileID: 5243509377547393027, guid: 653e1374feef7e547a71becefb636f69,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688501229144785923, guid: 653e1374feef7e547a71becefb636f69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 435731165}
+    - target: {fileID: 4688501229144785923, guid: 653e1374feef7e547a71becefb636f69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonResume
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 653e1374feef7e547a71becefb636f69, type: 3}
