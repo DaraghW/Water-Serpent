@@ -20,62 +20,73 @@ public class PlayerMov : MonoBehaviour
 
     public Rigidbody2D rb;
     public Transform tailStart;
-    public GameObject tailPart;
+    
     public GameObject water;
+
+    // Sprites
+    public SpriteRenderer spriteRenderer;
+    public Sprite headR;
+    public Sprite headL;
+    public Sprite headD;
+    public Sprite headU;
+    
+    //tail part
+    public GameObject currentTail;
+    public GameObject sideTail;
+    public GameObject topTail;
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(moveSpeed, 0);
+        currentTail = sideTail;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //constant move        
-        //rb.velocity = new Vector2(moveSpeed, 0);
-
-        /*
-        for looking at mouse
-        Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        */
-
-        //WASD controlls
+        //controlls
         turnDelay -= 1 * Time.deltaTime;
         if (turnDelay <= 0)
         {
             canTurn = true;
         }
         //UP
-        if (Input.GetKeyDown(KeyCode.W) && transform.rotation != Quaternion.Euler(0, 0, -90) && canTurn == true)
+        if (Input.GetKeyDown(KeyCode.W) && canTurn == true)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 90);
+            //transform.rotation = Quaternion.Euler(0, 0, 90);
+            spriteRenderer.sprite = headU;
+            currentTail = topTail;
             rb.velocity = new Vector2(0,moveSpeed);
             canTurn = false;
             turnDelay = .2f;
         }
         //Left
-        if (Input.GetKeyDown(KeyCode.A) && transform.rotation != Quaternion.Euler(0, 0, 0) && canTurn == true)
+        if (Input.GetKeyDown(KeyCode.A) && canTurn == true)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 180);
+            //transform.rotation = Quaternion.Euler(0, 0, 180);
+            spriteRenderer.sprite = headL;
+            currentTail = sideTail;
             rb.velocity = new Vector2(-moveSpeed, 0);
             canTurn = false;
             turnDelay = .2f;
         }
         //Down
-        if (Input.GetKeyDown(KeyCode.S) && transform.rotation != Quaternion.Euler(0, 0, 90) && canTurn == true)
+        if (Input.GetKeyDown(KeyCode.S) && canTurn == true)
         {
-            transform.rotation = Quaternion.Euler(0, 0, -90);
+            //transform.rotation = Quaternion.Euler(0, 0, -90);
+            spriteRenderer.sprite = headD;
+            currentTail = topTail;
             rb.velocity = new Vector2(0,-moveSpeed);
             canTurn = false;
             turnDelay = .2f;
         }
         //Right
-        if (Input.GetKeyDown(KeyCode.D) && transform.rotation != Quaternion.Euler(0, 0, -180) && canTurn == true)
+        if (Input.GetKeyDown(KeyCode.D) && canTurn == true)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            //transform.rotation = Quaternion.Euler(0, 0, 0);
+            spriteRenderer.sprite = headR;
+            currentTail = sideTail;
             rb.velocity = new Vector2(moveSpeed, 0);
             canTurn = false;
             turnDelay = .2f;
@@ -86,7 +97,7 @@ public class PlayerMov : MonoBehaviour
         timer -= 1 * Time.deltaTime;
         if (timer <= 0)
         {
-            Instantiate(tailPart, tailStart.position, Quaternion.identity);
+            Instantiate(currentTail, tailStart.position, Quaternion.identity);
 
             Instantiate(water, tailStart.position, Quaternion.identity);
             timer = maxTimer;
