@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class LandState : MonoBehaviour
 {
+    public Color healthyColor;
+    public Color medHealthyColor;
+    public Color unHealthyColor;
+
     //An enumerator for our health states.
     public enum HealthState
     { 
@@ -42,15 +46,15 @@ public class LandState : MonoBehaviour
         switch (healthStates)
         {
             case HealthState.healthy:
-                mySprite.color = Color.green;
+                mySprite.color = healthyColor;
                 Heal();
                 break;
             case HealthState.mediumhealthy:
-                mySprite.color = Color.yellow;
+                mySprite.color = medHealthyColor;
                 MediumHeal();
                 break;
             case HealthState.unhealthy:
-                mySprite.color = Color.red;
+                mySprite.color = unHealthyColor;
                 BigBoyHeal();
                 LandDecay();
 

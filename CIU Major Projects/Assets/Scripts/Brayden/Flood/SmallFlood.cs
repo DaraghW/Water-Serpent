@@ -18,7 +18,6 @@ public class SmallFlood : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             myGameObject.SetActive(false);
-            LandHealth.health = LandHealth.health + 10;
             ScoreKeeper.score = ScoreKeeper.score + 50;
         }
 

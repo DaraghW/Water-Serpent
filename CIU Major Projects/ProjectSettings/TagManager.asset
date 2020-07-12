@@ -49,6 +49,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 2729003499
+    locked: 0
+  - name: Nature
+    uniqueID: 1846622383
+    locked: 0
+  - name: Hazard
+    uniqueID: 846155349
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

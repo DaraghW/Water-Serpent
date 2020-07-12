@@ -113,10 +113,10 @@ public class GameHandle : MonoBehaviour
     //Changes a bunch of the UI for the timer, score & health. Changes the value for our health slider.
     void UpdateUI()
     {
-        timerText.text = "Time: " + time.ToString();
-        scoreText.text = "Score " + ScoreKeeper.score.ToString();
+        timerText.text = time.ToString("F0");
+        scoreText.text = ScoreKeeper.score.ToString();
         landHealthSlider.value = LandHealth.health;
-        landHealthText.text = "Health " + ((LandHealth.health/LandHealth.maxHealth) * 100)  + "%".ToString();
+        landHealthText.text = ((LandHealth.health/LandHealth.maxHealth) * 100)  + "%".ToString();
     }
 
     void GameHandler()

@@ -8,8 +8,6 @@ public class SmallFire : MonoBehaviour
     public GameObject myGameObject;
     public GameObject largeFire;
 
-    LandHealth tileHP;
-
     //The amount of health that will be taken from the land by the fire at certain intervals.
     public float decayRate;
     public float decayAmount;
@@ -20,7 +18,6 @@ public class SmallFire : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             myGameObject.SetActive(false);
-            LandHealth.health = LandHealth.health + 5;
             ScoreKeeper.score = ScoreKeeper.score + 100;
         }
 
