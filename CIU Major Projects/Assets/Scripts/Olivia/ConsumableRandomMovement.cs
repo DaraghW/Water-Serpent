@@ -25,6 +25,7 @@ public class ConsumableRandomMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, speed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)

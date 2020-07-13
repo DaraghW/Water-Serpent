@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6943523466066527267}
-  - component: {fileID: 7259003155336620102}
   - component: {fileID: 5548295370486099106}
   - component: {fileID: 5072337162559769703}
+  - component: {fileID: -4587191166794713803}
   m_Layer: 0
   m_Name: Insect
   m_TagString: Insect
@@ -33,21 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7259003155336620102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3533521840781978548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 003b9f64b2ab4464488477589a33fa0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  startWaitTime: 3
-  moveSpots: []
 --- !u!212 &5548295370486099106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -122,3 +107,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19570911, y: 0.314049}
   m_EdgeRadius: 0
+--- !u!114 &-4587191166794713803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3533521840781978548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003b9f64b2ab4464488477589a33fa0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  startWaitTime: 3
+  moveSpots: {x: 0, y: 0}
+  xPos: 0
+  yPos: 0

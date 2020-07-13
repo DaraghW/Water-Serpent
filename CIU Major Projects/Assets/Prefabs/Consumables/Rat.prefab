@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 837600384591625898}
-  - component: {fileID: -4760499684520326528}
   - component: {fileID: 3545483237111254669}
   - component: {fileID: 1457908674803222063}
+  - component: {fileID: -6140339650896780040}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Rat
@@ -33,21 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-4760499684520326528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8756686594566965956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 003b9f64b2ab4464488477589a33fa0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  startWaitTime: 5
-  moveSpots: []
 --- !u!212 &3545483237111254669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -122,3 +107,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19577232, y: 0.32755563}
   m_EdgeRadius: 0
+--- !u!114 &-6140339650896780040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756686594566965956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003b9f64b2ab4464488477589a33fa0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  startWaitTime: 5
+  moveSpots: {x: 0, y: 0}
+  xPos: 0
+  yPos: 0
