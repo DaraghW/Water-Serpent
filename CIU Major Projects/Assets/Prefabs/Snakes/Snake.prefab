@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 5076054851419445915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.44, y: 0, z: 0}
-  m_LocalScale: {x: 3.5916, y: 3.5916, z: 3.5916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3678509408664048274}
   - {fileID: 152118449949275900}
@@ -126,15 +126,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  regSpeed: 0
   turnDelay: 0.1
   maxTailLength: 6.35
   maxWaterLength: 5
   timer: 0.1
   maxTimer: 0.1
+  rb: {fileID: 0}
   tailStart: {fileID: 152118449949275900}
-  tailPart: {fileID: 2288903646595463400, guid: 7ec88eb173eb8fc45a6a0b85830932ba,
-    type: 3}
   water: {fileID: 8211773776923563937, guid: 18cb834d774166c4e962ec571e0d34a0, type: 3}
+  spriteRenderer: {fileID: 0}
+  headR: {fileID: 0}
+  headL: {fileID: 0}
+  headD: {fileID: 0}
+  headU: {fileID: 0}
+  currentTail: {fileID: 0}
+  sideTail: {fileID: 0}
+  topTail: {fileID: 0}
 --- !u!61 &2973961940651780077
 BoxCollider2D:
   m_ObjectHideFlags: 0

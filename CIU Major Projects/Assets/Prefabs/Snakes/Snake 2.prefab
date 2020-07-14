@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 7423642353478851256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.67, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5934531929543892140}
   m_Father: {fileID: 0}
@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  regSpeed: 0
   turnDelay: 0.1
   maxTailLength: 3
   maxWaterLength: 8
@@ -133,9 +134,15 @@ MonoBehaviour:
   maxTimer: 0.1
   rb: {fileID: 3771510102743110412}
   tailStart: {fileID: 5934531929543892140}
-  tailPart: {fileID: 2288903646595463400, guid: 7ec88eb173eb8fc45a6a0b85830932ba,
-    type: 3}
   water: {fileID: 8211773776923563937, guid: 18cb834d774166c4e962ec571e0d34a0, type: 3}
+  spriteRenderer: {fileID: 0}
+  headR: {fileID: 0}
+  headL: {fileID: 0}
+  headD: {fileID: 0}
+  headU: {fileID: 0}
+  currentTail: {fileID: 0}
+  sideTail: {fileID: 0}
+  topTail: {fileID: 0}
 --- !u!61 &5857445048241049686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,7 +160,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.256, y: 0.256}
+    oldSize: {x: 10.24, y: 10.24}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
