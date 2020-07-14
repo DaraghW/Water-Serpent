@@ -15,6 +15,7 @@ TagManager:
   - Flood
   - LargeFire
   - LargeFlood
+  - PlayerBounds
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Flood
   - LargeFire
   - LargeFlood
-  - 
+  - PlayerBounds
   - 
   - 
   - 
