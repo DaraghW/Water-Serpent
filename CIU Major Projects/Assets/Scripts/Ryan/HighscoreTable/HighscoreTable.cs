@@ -11,6 +11,7 @@ public class HighscoreTable : MonoBehaviour
 
     private void Awake()
     {
+        //Finds the container & template for our highscore.
         entryContainer = transform.Find("highscoreEntryContainer");
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
