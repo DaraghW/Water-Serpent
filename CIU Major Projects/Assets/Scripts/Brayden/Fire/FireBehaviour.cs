@@ -67,7 +67,7 @@ public class FireBehaviour : MonoBehaviour
     void FireCheck()
     {
         listFire = GameObject.FindGameObjectsWithTag("Fire");
-        Debug.Log("There are " + listFire.Length + " objects");
+        //Debug.Log("There are " + listFire.Length + " objects");
     }
     void FireDeath()
     {

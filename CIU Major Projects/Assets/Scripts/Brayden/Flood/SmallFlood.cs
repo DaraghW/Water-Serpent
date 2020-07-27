@@ -13,18 +13,20 @@ public class SmallFlood : MonoBehaviour
     public float decayAmount;
     public float nextDecay;
 
+    GameObject myController;
+    ScoreKeeper scorekeeper;
+    private void Start()
+    {
+        myController = GameObject.FindGameObjectWithTag("GameController");
+        scorekeeper = myController.GetComponentInChildren<ScoreKeeper>();
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             myGameObject.SetActive(false);
-            ScoreKeeper.score = ScoreKeeper.score + 50;
-        }
-
-        if (collision.gameObject.tag == "Flood")
-        {
-            Destroy(myGameObject);
-            //Instantiate(largeFlood, transform.position, transform.rotation);
+            scorekeeper.score = scorekeeper.score + 500;
         }
 
         if (collision.gameObject.tag == "Fire")

@@ -29,6 +29,8 @@ public class GameHandle : MonoBehaviour
     //A pause boolean to keep track of the pause states.
     public bool IsPaused = false;
 
+    public InputField myInputField;
+
     //An enum for our game states.
     public enum GameState
     { 
@@ -40,11 +42,14 @@ public class GameHandle : MonoBehaviour
     //A reference to our game states.
     public GameState myStates;
 
+    public ScoreKeeper scorekeeper;
+
     void Start()
     {
+        scorekeeper = GetComponentInChildren<ScoreKeeper>();
         //Starts the game with zero score, grabs the landhealthcomponent from the script and makes our game state to unpaused.
-        ScoreKeeper.score = 0;
-        landHealth = GetComponent<LandHealth>();
+        scorekeeper.score = 0;
+        landHealth = GetComponentInChildren<LandHealth>();
         myStates = GameState.Unpaused;
     }
 
@@ -114,7 +119,7 @@ public class GameHandle : MonoBehaviour
     void UpdateUI()
     {
         timerText.text = time.ToString("F0");
-        scoreText.text = ScoreKeeper.score.ToString();
+        scoreText.text = scorekeeper.score.ToString();
         landHealthSlider.value = LandHealth.health;
         landHealthText.text = ((LandHealth.health/LandHealth.maxHealth) * 100)  + "%".ToString();
     }
@@ -125,7 +130,7 @@ public class GameHandle : MonoBehaviour
         time = time + Time.deltaTime;
         
         //Increases our score.
-        ScoreKeeper.score = ScoreKeeper.score + 1;
+        scorekeeper.score += 1;
 
         //Handles what happens when our health reaches 0.
         if (landHealthSlider.value <= 0)
@@ -133,7 +138,8 @@ public class GameHandle : MonoBehaviour
             myStates = GameState.Lose;
             Time.timeScale = 0f;
             losePanel.SetActive(true);
-            loseText.text = "You lasted a total of " + time.ToString() + " seconds & scored a total of " + ScoreKeeper.score.ToString() + " points!";
+            loseText.text = "You lasted a total of " + time.ToString() + " seconds & scored a total of " + scorekeeper.score.ToString() + " points!";
+            //SaveScores();
         }
 
         //A check to make sure our health stays at 0 if it is reached.
@@ -141,5 +147,21 @@ public class GameHandle : MonoBehaviour
         {
             LandHealth.health = 0;
         }
+    }
+
+    //Handles our saving of a score.
+    public void SavePlayerData()
+    {
+        int newScore = scorekeeper.score;
+        PlayerPrefs.SetInt("newScore", newScore);
+        PlayerPrefs.Save();
+        Debug.Log("Saving score as amount: " + newScore);
+    }
+
+    public void SetName()
+    {
+        string newName = myInputField.text;
+        PlayerPrefs.SetString("newName", newName);
+        Debug.Log(newName);
     }
 }

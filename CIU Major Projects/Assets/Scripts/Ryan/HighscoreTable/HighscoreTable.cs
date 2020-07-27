@@ -17,6 +17,10 @@ public class HighscoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
+        AddhighscoreEntry(1000, "CMK");
+
+        /*Loads our highscore data form the json string & then converts it into a highscores object,
+         * which contains a list of highscores entries that we use to display. */
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
@@ -98,6 +102,25 @@ public class HighscoreTable : MonoBehaviour
         highscores.highscoreEntryList.Add(highscoreEntry);
 
         //Save updated Highscores
+        string json = JsonUtility.ToJson(highscores);
+        PlayerPrefs.SetString("highscoreTable", json);
+        PlayerPrefs.Save();
+    }
+
+    private void AddHighscoreEntry(int score, string name)
+    {
+        //Create Highscore entry.
+        HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
+
+        /*Loads our highscore data form the json string & then converts it into a highscores object,
+        * which contains a list of highscores entries that we use to display. */
+        string jsonString = PlayerPrefs.GetString("highscoreTable");
+        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+
+        //Adds a new entry to highscores.
+        highscores.highscoreEntryList.Add(highscoreEntry);
+
+        //Saves updated highscores list.
         string json = JsonUtility.ToJson(highscores);
         PlayerPrefs.SetString("highscoreTable", json);
         PlayerPrefs.Save();

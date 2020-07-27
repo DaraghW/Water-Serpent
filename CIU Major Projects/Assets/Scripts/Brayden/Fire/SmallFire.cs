@@ -13,12 +13,19 @@ public class SmallFire : MonoBehaviour
     public float decayAmount;
     public float nextDecay;
 
+    GameObject myController;
+    ScoreKeeper scorekeeper;
+    private void Start()
+    {
+        myController = GameObject.FindGameObjectWithTag("GameController");
+        scorekeeper = myController.GetComponentInChildren<ScoreKeeper>();
+    }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             myGameObject.SetActive(false);
-            ScoreKeeper.score = ScoreKeeper.score + 100;
+            scorekeeper.score = scorekeeper.score + 100;
         }
 
         if(collision.gameObject.tag == "Fire")

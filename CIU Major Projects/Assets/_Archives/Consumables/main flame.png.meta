@@ -1,0 +1,2413 @@
+fileFormatVersion: 2
+guid: b28bcdd3900d052449bf807ec487fe55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2172547921492171533
+    second: main flame_0
+  - first:
+      213: 2534097157289688103
+    second: main flame_1
+  - first:
+      213: 6507573664668037996
+    second: main flame_2
+  - first:
+      213: 6536010176516155910
+    second: main flame_3
+  - first:
+      213: 7832874795988992461
+    second: main flame_4
+  - first:
+      213: -4477446800432717288
+    second: main flame_5
+  - first:
+      213: -4381815257336846984
+    second: main flame_6
+  - first:
+      213: 4032823694209062293
+    second: main flame_7
+  - first:
+      213: 7414988504030939055
+    second: main flame_8
+  - first:
+      213: -5235480129337851929
+    second: main flame_9
+  - first:
+      213: -3724211221406220993
+    second: main flame_10
+  - first:
+      213: 2270063585553520864
+    second: main flame_11
+  - first:
+      213: -7665072751250659044
+    second: main flame_12
+  - first:
+      213: 353336467928164486
+    second: main flame_13
+  - first:
+      213: 8386526191959141756
+    second: main flame_14
+  - first:
+      213: -3188372470308346324
+    second: main flame_15
+  - first:
+      213: 1648537708368428507
+    second: main flame_16
+  - first:
+      213: 4835063440273979237
+    second: main flame_17
+  - first:
+      213: 2027658333045227157
+    second: main flame_18
+  - first:
+      213: 3844955888820045228
+    second: main flame_19
+  - first:
+      213: -6859554870189069267
+    second: main flame_20
+  - first:
+      213: -6513955876590777188
+    second: main flame_21
+  - first:
+      213: -2458364608547833815
+    second: main flame_22
+  - first:
+      213: -5148210905088367733
+    second: main flame_23
+  - first:
+      213: -2101404243276368466
+    second: main flame_24
+  - first:
+      213: 7802473351952746750
+    second: main flame_25
+  - first:
+      213: 5562599989922788954
+    second: main flame_26
+  - first:
+      213: 8096127061356794804
+    second: main flame_27
+  - first:
+      213: 2561308233841969616
+    second: main flame_28
+  - first:
+      213: -6752215081919160429
+    second: main flame_29
+  - first:
+      213: -858602723353012633
+    second: main flame_30
+  - first:
+      213: -2522795870730622932
+    second: main flame_31
+  - first:
+      213: -5581857930637262049
+    second: main flame_32
+  - first:
+      213: 6369571891563500172
+    second: main flame_33
+  - first:
+      213: 8562739042742606561
+    second: main flame_34
+  - first:
+      213: 1715451898837661556
+    second: main flame_35
+  - first:
+      213: -9174745163375032451
+    second: main flame_36
+  - first:
+      213: 8561206902477307945
+    second: main flame_37
+  - first:
+      213: 3025865554263357058
+    second: main flame_38
+  - first:
+      213: 1868357372858651554
+    second: main flame_39
+  - first:
+      213: -5961975523912584071
+    second: main flame_40
+  - first:
+      213: -2227644253629553045
+    second: main flame_41
+  - first:
+      213: 4279515103011861567
+    second: main flame_42
+  - first:
+      213: -4658315190043305087
+    second: main flame_43
+  - first:
+      213: -4651164022944598928
+    second: main flame_44
+  - first:
+      213: -4334861668587908346
+    second: main flame_45
+  - first:
+      213: -5573612344039821531
+    second: main flame_46
+  - first:
+      213: 514075642311210956
+    second: main flame_47
+  - first:
+      213: -6994842736787004568
+    second: main flame_48
+  - first:
+      213: -1252034557954080918
+    second: main flame_49
+  - first:
+      213: 5975010570403735078
+    second: main flame_50
+  - first:
+      213: 5332889942978775167
+    second: main flame_51
+  - first:
+      213: 1325116332599498888
+    second: main flame_52
+  - first:
+      213: -4590770675869590605
+    second: main flame_53
+  - first:
+      213: -4696397136154983011
+    second: main flame_54
+  - first:
+      213: 2822358459539188920
+    second: main flame_55
+  - first:
+      213: 4338223336072181647
+    second: main flame_56
+  - first:
+      213: -1094290225004355193
+    second: main flame_57
+  - first:
+      213: -5392001660510830330
+    second: main flame_58
+  - first:
+      213: 7985658896417944695
+    second: main flame_59
+  - first:
+      213: 4695082415446634584
+    second: main flame_60
+  - first:
+      213: 3884558159523976906
+    second: main flame_61
+  - first:
+      213: 7535280458658062336
+    second: main flame_62
+  - first:
+      213: 4255219896495124987
+    second: main flame_63
+  - first:
+      213: -987890768168031524
+    second: main flame_64
+  - first:
+      213: 8511612979311842294
+    second: main flame_65
+  - first:
+      213: 7238998081394603768
+    second: main flame_66
+  - first:
+      213: -6412206146722957929
+    second: main flame_67
+  - first:
+      213: -1220450273091786942
+    second: main flame_68
+  - first:
+      213: -180881480936596452
+    second: main flame_69
+  - first:
+      213: 5465134472079559986
+    second: main flame_70
+  - first:
+      213: 7878228289230858746
+    second: main flame_71
+  - first:
+      213: -7339240860559123780
+    second: main flame_72
+  - first:
+      213: 8458913907922629276
+    second: main flame_73
+  - first:
+      213: 609123655773839375
+    second: main flame_74
+  - first:
+      213: -3186596864648293511
+    second: main flame_75
+  - first:
+      213: 5634207632046008137
+    second: main flame_76
+  - first:
+      213: -5030221829149197607
+    second: main flame_77
+  - first:
+      213: -1517783927415259698
+    second: main flame_78
+  - first:
+      213: 4792754752186912133
+    second: main flame_79
+  - first:
+      213: 9077164282287983250
+    second: main flame_80
+  - first:
+      213: -7612659147001336371
+    second: main flame_81
+  - first:
+      213: -5479912326846548764
+    second: main flame_82
+  - first:
+      213: -6613118441879539012
+    second: main flame_83
+  - first:
+      213: 7513231852256524803
+    second: main flame_84
+  - first:
+      213: 1718779913241799764
+    second: main flame_85
+  - first:
+      213: -6849963345609951341
+    second: main flame_86
+  - first:
+      213: 1925309384702137812
+    second: main flame_87
+  - first:
+      213: 4956963920735510991
+    second: main flame_88
+  - first:
+      213: 1906233383576725557
+    second: main flame_89
+  - first:
+      213: 8079104882477610480
+    second: main flame_90
+  - first:
+      213: 8467519908119414919
+    second: main flame_91
+  - first:
+      213: 2874619169001557137
+    second: main flame_92
+  - first:
+      213: -168830259008104367
+    second: main flame_93
+  - first:
+      213: -8123165840796597049
+    second: main flame_94
+  - first:
+      213: 365623380547660564
+    second: main flame_95
+  - first:
+      213: 4580317776247900068
+    second: main flame_96
+  - first:
+      213: -2921215100150460268
+    second: main flame_97
+  - first:
+      213: 3815725333001450893
+    second: main flame_98
+  - first:
+      213: -5812427605772266623
+    second: main flame_99
+  - first:
+      213: -5523837720250329159
+    second: main flame_100
+  - first:
+      213: -3525766117710356064
+    second: main flame_101
+  - first:
+      213: 7151937765441290058
+    second: main flame_102
+  - first:
+      213: 876641429385398804
+    second: main flame_103
+  - first:
+      213: -7146674119427407024
+    second: main flame_104
+  - first:
+      213: -8815041756620639410
+    second: main flame_105
+  - first:
+      213: -7421236704321524831
+    second: main flame_106
+  - first:
+      213: -1203544965798504003
+    second: main flame_107
+  - first:
+      213: 314443934205543302
+    second: main flame_108
+  - first:
+      213: -8698062430137329602
+    second: main flame_109
+  - first:
+      213: -248156889339975577
+    second: main flame_110
+  - first:
+      213: -394632987910089734
+    second: main flame_111
+  - first:
+      213: 3391427000803944029
+    second: main flame_112
+  - first:
+      213: -8657307576567595349
+    second: main flame_113
+  - first:
+      213: 1735397153977752470
+    second: main flame_114
+  - first:
+      213: 4003458875136043829
+    second: main flame_115
+  - first:
+      213: -4947281968186148035
+    second: main flame_116
+  - first:
+      213: -8858359757005427120
+    second: main flame_117
+  - first:
+      213: 5320965656609901424
+    second: main flame_118
+  - first:
+      213: 8926097963351557834
+    second: main flame_119
+  - first:
+      213: 8129680093592327417
+    second: main flame_120
+  - first:
+      213: 4165658596405224666
+    second: main flame_121
+  - first:
+      213: -7818625751723828414
+    second: main flame_122
+  - first:
+      213: 8453419875532091310
+    second: main flame_123
+  - first:
+      213: -3237589893034755382
+    second: main flame_124
+  - first:
+      213: -5660870280476606342
+    second: main flame_125
+  - first:
+      213: -3543860571703447569
+    second: main flame_126
+  - first:
+      213: 6153641743218154006
+    second: main flame_127
+  - first:
+      213: -3601445141977353189
+    second: main flame_128
+  - first:
+      213: 7052165746137914382
+    second: main flame_129
+  - first:
+      213: -879000556112056891
+    second: main flame_130
+  - first:
+      213: -8152065076187715912
+    second: main flame_131
+  - first:
+      213: -299505007465724455
+    second: main flame_132
+  - first:
+      213: -5220054904057051945
+    second: main flame_133
+  - first:
+      213: -4988212101593711190
+    second: main flame_134
+  - first:
+      213: 5953131150474042830
+    second: main flame_135
+  - first:
+      213: -5462041555319366037
+    second: main flame_136
+  - first:
+      213: -952290490482081756
+    second: main flame_137
+  - first:
+      213: -3230354247549668102
+    second: main flame_138
+  - first:
+      213: -7740945565538729032
+    second: main flame_139
+  - first:
+      213: -1829220800204244794
+    second: main flame_140
+  - first:
+      213: -592691337335284314
+    second: main flame_141
+  - first:
+      213: -6556079763515033216
+    second: main flame_142
+  - first:
+      213: -6389081466964908168
+    second: main flame_143
+  - first:
+      213: 8461672257707226796
+    second: main flame_144
+  - first:
+      213: 7727744691618741824
+    second: main flame_145
+  - first:
+      213: -4689212769788129482
+    second: main flame_146
+  - first:
+      213: 6774099521876981626
+    second: main flame_147
+  - first:
+      213: -1506553965767380968
+    second: main flame_148
+  - first:
+      213: -3781496812820907905
+    second: main flame_149
+  - first:
+      213: 5012644628200971443
+    second: main flame_150
+  - first:
+      213: 8830966422327351735
+    second: main flame_151
+  - first:
+      213: 2821586310243528361
+    second: main flame_152
+  - first:
+      213: -4501953429286124871
+    second: main flame_153
+  - first:
+      213: 6238576333825397037
+    second: main flame_154
+  - first:
+      213: 7495440388545350905
+    second: main flame_155
+  - first:
+      213: -96106523641417901
+    second: main flame_156
+  - first:
+      213: -1251442173334949548
+    second: main flame_157
+  - first:
+      213: 3828742314461884095
+    second: main flame_158
+  - first:
+      213: 3581990793397649578
+    second: main flame_159
+  - first:
+      213: -6018321731411400262
+    second: main flame_160
+  - first:
+      213: -455783827582747488
+    second: main flame_161
+  - first:
+      213: 3001247533469504934
+    second: main flame_162
+  - first:
+      213: 7675456179195470183
+    second: main flame_163
+  - first:
+      213: -8637606412712570958
+    second: main flame_164
+  - first:
+      213: -5274685459301206566
+    second: main flame_165
+  - first:
+      213: 8110336268717298721
+    second: main flame_166
+  - first:
+      213: 8315976906768928946
+    second: main flame_167
+  - first:
+      213: -2443783137168589537
+    second: main flame_168
+  - first:
+      213: 2951801162977261037
+    second: main flame_169
+  - first:
+      213: 4561044428629586469
+    second: main flame_170
+  - first:
+      213: 2396022143716128295
+    second: main flame_171
+  - first:
+      213: 5580450757262519861
+    second: main flame_172
+  - first:
+      213: -5438547890495642088
+    second: main flame_173
+  - first:
+      213: -1717849410016053029
+    second: main flame_174
+  - first:
+      213: -4606936191084429783
+    second: main flame_175
+  - first:
+      213: 9081185712684466430
+    second: main flame_176
+  - first:
+      213: -2843598603238940447
+    second: main flame_177
+  - first:
+      213: 3146842801781371281
+    second: main flame_178
+  - first:
+      213: -8868258246636339269
+    second: main flame_179
+  - first:
+      213: 1513296570616815198
+    second: main flame_180
+  - first:
+      213: -6214410031841521673
+    second: main flame_181
+  - first:
+      213: -8916466374026709823
+    second: main flame_182
+  - first:
+      213: -7079814728492820540
+    second: main flame_183
+  - first:
+      213: 7392885135715652869
+    second: main flame_184
+  - first:
+      213: -3352187900948358732
+    second: main flame_185
+  - first:
+      213: -8808029053217811531
+    second: main flame_186
+  - first:
+      213: -2783789361774273315
+    second: main flame_187
+  - first:
+      213: -1661726242447933729
+    second: main flame_188
+  - first:
+      213: 4918902035154626631
+    second: main flame_189
+  - first:
+      213: -355359515813938910
+    second: main flame_190
+  - first:
+      213: -4815161642407489734
+    second: main flame_191
+  - first:
+      213: 4599238999746261739
+    second: main flame_192
+  - first:
+      213: 2120920307073814323
+    second: main flame_193
+  - first:
+      213: 1738992402553700316
+    second: main flame_194
+  - first:
+      213: -750702264925709846
+    second: main flame_195
+  - first:
+      213: 8715269956398648477
+    second: main flame_196
+  - first:
+      213: -2838593258633440407
+    second: main flame_197
+  - first:
+      213: -1151928357732762398
+    second: main flame_198
+  - first:
+      213: -3794704456250467832
+    second: main flame_199
+  - first:
+      213: -1156654863029731493
+    second: main flame_200
+  - first:
+      213: -4309788061923051090
+    second: main flame_201
+  - first:
+      213: 1096410350955297985
+    second: main flame_202
+  - first:
+      213: -8348962793513267151
+    second: main flame_203
+  - first:
+      213: -7952866755984949918
+    second: main flame_204
+  - first:
+      213: 4575257915506770166
+    second: main flame_205
+  - first:
+      213: 4625553590159526041
+    second: main flame_206
+  - first:
+      213: 4199680247599219977
+    second: main flame_207
+  - first:
+      213: -3726645382895075252
+    second: main flame_208
+  - first:
+      213: -1809115916900406357
+    second: main flame_209
+  - first:
+      213: 8346013140623063915
+    second: main flame_210
+  - first:
+      213: 7659521524039770698
+    second: main flame_211
+  - first:
+      213: -1169461714341447724
+    second: main flame_212
+  - first:
+      213: -704776113551932384
+    second: main flame_213
+  - first:
+      213: -3309796257112237395
+    second: main flame_214
+  - first:
+      213: -6881436509874662301
+    second: main flame_215
+  - first:
+      213: -7968630747834467885
+    second: main flame_216
+  - first:
+      213: -5412647008125486761
+    second: main flame_217
+  - first:
+      213: 1423291745177745284
+    second: main flame_218
+  - first:
+      213: 9084599378751552241
+    second: main flame_219
+  - first:
+      213: -3925971672046431022
+    second: main flame_220
+  - first:
+      213: -4639215033232033358
+    second: main flame_221
+  - first:
+      213: 5878212208801492269
+    second: main flame_222
+  - first:
+      213: -8175676431009276243
+    second: main flame_223
+  - first:
+      213: -2434789765847413972
+    second: main flame_224
+  - first:
+      213: 7897696395396620181
+    second: main flame_225
+  - first:
+      213: -2464757739642671326
+    second: main flame_226
+  - first:
+      213: 2587731251006998404
+    second: main flame_227
+  - first:
+      213: 2198846184955056758
+    second: main flame_228
+  - first:
+      213: 637814833700998470
+    second: main flame_229
+  - first:
+      213: 2509326585283444642
+    second: main flame_230
+  - first:
+      213: -4491301854368739315
+    second: main flame_231
+  - first:
+      213: 4875509941081601730
+    second: main flame_232
+  - first:
+      213: 1689864708729257840
+    second: main flame_233
+  - first:
+      213: -1398305706925167689
+    second: main flame_234
+  - first:
+      213: -7787818104607621217
+    second: main flame_235
+  - first:
+      213: -6815192583346543614
+    second: main flame_236
+  - first:
+      213: -4452446531976963479
+    second: main flame_237
+  - first:
+      213: 2386945459569745049
+    second: main flame_238
+  - first:
+      213: 6309281309868343149
+    second: main flame_239
+  - first:
+      213: 695762774002819162
+    second: main flame_240
+  - first:
+      213: 347635063317612320
+    second: main flame_241
+  - first:
+      213: -4273701505740097914
+    second: main flame_242
+  - first:
+      213: -3186163871472882646
+    second: main flame_243
+  - first:
+      213: 2356988252611436438
+    second: main flame_244
+  - first:
+      213: 6543782148834797226
+    second: main flame_245
+  - first:
+      213: -4485475523484774392
+    second: main flame_246
+  - first:
+      213: -6532030418536594713
+    second: main flame_247
+  - first:
+      213: 6728628717567117452
+    second: main flame_248
+  - first:
+      213: 7980930984374611905
+    second: main flame_249
+  - first:
+      213: 805888950176466029
+    second: main flame_250
+  - first:
+      213: 3197827630015892403
+    second: main flame_251
+  - first:
+      213: -1541725492585519057
+    second: main flame_252
+  - first:
+      213: 9043519185734348939
+    second: main flame_253
+  - first:
+      213: 3030465192686254528
+    second: main flame_254
+  - first:
+      213: -1285368418538600392
+    second: main flame_255
+  - first:
+      213: -493741409103212252
+    second: main flame_256
+  - first:
+      213: 5226292214307233326
+    second: main flame_257
+  - first:
+      213: 4602852182245877337
+    second: main flame_258
+  - first:
+      213: -7762629575410185081
+    second: main flame_259
+  - first:
+      213: 7198480458453132293
+    second: main flame_260
+  - first:
+      213: -205735751952143245
+    second: main flame_261
+  - first:
+      213: 2464232699314628846
+    second: main flame_262
+  - first:
+      213: -5292510146077193341
+    second: main flame_263
+  - first:
+      213: 2360182154847545371
+    second: main flame_264
+  - first:
+      213: -3961956964485359513
+    second: main flame_265
+  - first:
+      213: 2505631024966240795
+    second: main flame_266
+  - first:
+      213: 4166438816795862399
+    second: main flame_267
+  - first:
+      213: 1368848171158516450
+    second: main flame_268
+  - first:
+      213: -8954064471823744526
+    second: main flame_269
+  - first:
+      213: -7259679720994255280
+    second: main flame_270
+  - first:
+      213: 547989124918618886
+    second: main flame_271
+  - first:
+      213: -1956841918698568278
+    second: main flame_272
+  - first:
+      213: -9156130847255145308
+    second: main flame_273
+  - first:
+      213: 6594149038928809656
+    second: main flame_274
+  - first:
+      213: 2878103901410935617
+    second: main flame_275
+  - first:
+      213: 6755763085201666331
+    second: main flame_276
+  - first:
+      213: 6056559492826898523
+    second: main flame_277
+  - first:
+      213: -6978677773077454886
+    second: main flame_278
+  - first:
+      213: -7721374620766623794
+    second: main flame_279
+  - first:
+      213: 1674904736400246283
+    second: main flame_280
+  - first:
+      213: 359841420717486555
+    second: main flame_281
+  - first:
+      213: -8293591444148394875
+    second: main flame_282
+  - first:
+      213: -9003599406165463060
+    second: main flame_283
+  - first:
+      213: -7832211041478090940
+    second: main flame_284
+  - first:
+      213: 6065151990709561728
+    second: main flame_285
+  - first:
+      213: -294921643509290311
+    second: main flame_286
+  - first:
+      213: 4403920283491435614
+    second: main flame_287
+  - first:
+      213: 3121094688278815097
+    second: main flame_288
+  - first:
+      213: -1643616553338360237
+    second: main flame_289
+  - first:
+      213: -5758449564369301434
+    second: main flame_290
+  - first:
+      213: 3783916934110380219
+    second: main flame_291
+  - first:
+      213: 8197883810513556802
+    second: main flame_292
+  - first:
+      213: -5278251239486935691
+    second: main flame_293
+  - first:
+      213: -7925508918349775731
+    second: main flame_294
+  - first:
+      213: 1707348254184243865
+    second: main flame_295
+  - first:
+      213: 8683405700677543610
+    second: main flame_296
+  - first:
+      213: -5204183089840176073
+    second: main flame_297
+  - first:
+      213: -6463066965566684320
+    second: main flame_298
+  - first:
+      213: -4540521422893480521
+    second: main flame_299
+  - first:
+      213: -4345453685815721212
+    second: main flame_300
+  - first:
+      213: -2003523777981494647
+    second: main flame_301
+  - first:
+      213: -2971557554785867923
+    second: main flame_302
+  - first:
+      213: 488294459634060411
+    second: main flame_303
+  - first:
+      213: -8824323605148235379
+    second: main flame_304
+  - first:
+      213: 3647463177558775418
+    second: main flame_305
+  - first:
+      213: -2063105207107486291
+    second: main flame_306
+  - first:
+      213: 1354082185229435330
+    second: main flame_307
+  - first:
+      213: 1204929991791204056
+    second: main flame_308
+  - first:
+      213: 886775642262381582
+    second: main flame_309
+  - first:
+      213: 5754155181976641583
+    second: main flame_310
+  - first:
+      213: -8359077965859521489
+    second: main flame_311
+  - first:
+      213: -1498579621389681747
+    second: main flame_312
+  - first:
+      213: -463709383545025387
+    second: main flame_313
+  - first:
+      213: -5523172859018484459
+    second: main flame_314
+  - first:
+      213: -3195584434125169484
+    second: main flame_315
+  - first:
+      213: 3510834915432778542
+    second: main flame_316
+  - first:
+      213: -8313396360403385129
+    second: main flame_317
+  - first:
+      213: -3804310654086728427
+    second: main flame_318
+  - first:
+      213: 1959261198737920050
+    second: main flame_319
+  - first:
+      213: 3311421125037729206
+    second: main flame_320
+  - first:
+      213: 5400287567489473657
+    second: main flame_321
+  - first:
+      213: 312249801226430250
+    second: main flame_322
+  - first:
+      213: -461440017426267623
+    second: main flame_323
+  - first:
+      213: -2419511579433480261
+    second: main flame_324
+  - first:
+      213: 2392347174614935713
+    second: main flame_325
+  - first:
+      213: -2519480366776790925
+    second: main flame_326
+  - first:
+      213: -1300731682151622477
+    second: main flame_327
+  - first:
+      213: 6676395625312852056
+    second: main flame_328
+  - first:
+      213: 8050830128372822853
+    second: main flame_329
+  - first:
+      213: -6226693231831780746
+    second: main flame_330
+  - first:
+      213: 6423690165648072571
+    second: main flame_331
+  - first:
+      213: -7114029948324312609
+    second: main flame_332
+  - first:
+      213: 8671002193318990320
+    second: main flame_333
+  - first:
+      213: -8969439734822681084
+    second: main flame_334
+  - first:
+      213: 5204537031136513039
+    second: main flame_335
+  - first:
+      213: -5453133358157394260
+    second: main flame_336
+  - first:
+      213: 8334149136430329642
+    second: main flame_337
+  - first:
+      213: -702367109450570409
+    second: main flame_338
+  - first:
+      213: -1677161222319664207
+    second: main flame_339
+  - first:
+      213: 8525842791413421381
+    second: main flame_340
+  - first:
+      213: -5867742204985493057
+    second: main flame_341
+  - first:
+      213: -6208499339186113426
+    second: main flame_342
+  - first:
+      213: -6629892657068969895
+    second: main flame_343
+  - first:
+      213: -6491396842098427652
+    second: main flame_344
+  - first:
+      213: 4721961440712753473
+    second: main flame_345
+  - first:
+      213: 7538337801967652192
+    second: main flame_346
+  - first:
+      213: 2357506379087902969
+    second: main flame_347
+  - first:
+      213: 8387940419359857075
+    second: main flame_348
+  - first:
+      213: 282602886732424285
+    second: main flame_349
+  - first:
+      213: 8757202011899720636
+    second: main flame_350
+  - first:
+      213: 2403881982903747180
+    second: main flame_351
+  - first:
+      213: -5258561522206611909
+    second: main flame_352
+  - first:
+      213: 2072743515297292580
+    second: main flame_353
+  - first:
+      213: 2543647806491175347
+    second: main flame_354
+  - first:
+      213: -4718648857279990632
+    second: main flame_355
+  - first:
+      213: 373220293480518990
+    second: main flame_356
+  - first:
+      213: -170803515373428812
+    second: main flame_357
+  - first:
+      213: -5816342792614972872
+    second: main flame_358
+  - first:
+      213: 2501006283910933711
+    second: main flame_359
+  - first:
+      213: -7864211201405718293
+    second: main flame_360
+  - first:
+      213: 23762845925216095
+    second: main flame_361
+  - first:
+      213: 5615610705317662873
+    second: main flame_362
+  - first:
+      213: 823774290174315167
+    second: main flame_363
+  - first:
+      213: 7749504699334627837
+    second: main flame_364
+  - first:
+      213: -2859641205794043811
+    second: main flame_365
+  - first:
+      213: 6706214918061653758
+    second: main flame_366
+  - first:
+      213: 8936321604089250435
+    second: main flame_367
+  - first:
+      213: 7573208543565227973
+    second: main flame_368
+  - first:
+      213: -4691553352976102900
+    second: main flame_369
+  - first:
+      213: 3406094012509890438
+    second: main flame_370
+  - first:
+      213: -4470991467607792851
+    second: main flame_371
+  - first:
+      213: -7409713306829677325
+    second: main flame_372
+  - first:
+      213: 4634382207089225444
+    second: main flame_373
+  - first:
+      213: -2121174405554506954
+    second: main flame_374
+  - first:
+      213: -180795828032463849
+    second: main flame_375
+  - first:
+      213: 7409464475094519401
+    second: main flame_376
+  - first:
+      213: -7411362128316602990
+    second: main flame_377
+  - first:
+      213: -522126456366999038
+    second: main flame_378
+  - first:
+      213: -6705500284466746769
+    second: main flame_379
+  - first:
+      213: -7747121742471206779
+    second: main flame_380
+  - first:
+      213: -6714937769159037094
+    second: main flame_381
+  - first:
+      213: -8155222752593711897
+    second: main flame_382
+  - first:
+      213: 8584374578285292164
+    second: main flame_383
+  - first:
+      213: -2343060946611723204
+    second: main flame_384
+  - first:
+      213: 5251845883833142821
+    second: main flame_385
+  - first:
+      213: -7779514858079930070
+    second: main flame_386
+  - first:
+      213: -8233771843404224339
+    second: main flame_387
+  - first:
+      213: 8233431177821193555
+    second: main flame_388
+  - first:
+      213: -3894571795910227160
+    second: main flame_389
+  - first:
+      213: 659425146431868501
+    second: main flame_390
+  - first:
+      213: 3722235086180728312
+    second: main flame_391
+  - first:
+      213: -572284135695493404
+    second: main flame_392
+  - first:
+      213: 7303966229150791642
+    second: main flame_393
+  - first:
+      213: 8497577363755298535
+    second: main flame_394
+  - first:
+      213: 9189790934846298231
+    second: main flame_395
+  - first:
+      213: 7457607779693172224
+    second: main flame_396
+  - first:
+      213: 1344966255477563825
+    second: main flame_397
+  - first:
+      213: -8534473781752675428
+    second: main flame_398
+  - first:
+      213: -9108454879057253365
+    second: main flame_399
+  - first:
+      213: 7726428307685846335
+    second: main flame_400
+  - first:
+      213: 3864770651478062262
+    second: main flame_401
+  - first:
+      213: -1195217931467989588
+    second: main flame_402
+  - first:
+      213: 5833258460259781009
+    second: main flame_403
+  - first:
+      213: 6695871106040111217
+    second: main flame_404
+  - first:
+      213: 1959496126223966049
+    second: main flame_405
+  - first:
+      213: 8244758522375572503
+    second: main flame_406
+  - first:
+      213: 5731610377826268589
+    second: main flame_407
+  - first:
+      213: 6320184183293686741
+    second: main flame_408
+  - first:
+      213: 9169484227839856109
+    second: main flame_409
+  - first:
+      213: -6181540169780857799
+    second: main flame_410
+  - first:
+      213: 8696115966516327085
+    second: main flame_411
+  - first:
+      213: -4254095101129358393
+    second: main flame_412
+  - first:
+      213: 6270857595899082609
+    second: main flame_413
+  - first:
+      213: -7783882908216839149
+    second: main flame_414
+  - first:
+      213: 4771456484195199216
+    second: main flame_415
+  - first:
+      213: 4149861262282555223
+    second: main flame_416
+  - first:
+      213: 8621403442396415492
+    second: main flame_417
+  - first:
+      213: 1457302870357017466
+    second: main flame_418
+  - first:
+      213: -2088468162657598643
+    second: main flame_419
+  - first:
+      213: 3495147165546907548
+    second: main flame_420
+  - first:
+      213: 1559433555892715450
+    second: main flame_421
+  - first:
+      213: 7636026997167144983
+    second: main flame_422
+  - first:
+      213: 4930906020321396797
+    second: main flame_423
+  - first:
+      213: -6021641744880199762
+    second: main flame_424
+  - first:
+      213: -8377515696034706296
+    second: main flame_425
+  - first:
+      213: -1468358055960244515
+    second: main flame_426
+  - first:
+      213: 4802019650143034088
+    second: main flame_427
+  - first:
+      213: 1019727949152338171
+    second: main flame_428
+  - first:
+      213: 7612115434033378785
+    second: main flame_429
+  - first:
+      213: -5118268784863072224
+    second: main flame_430
+  - first:
+      213: 9084920272009114964
+    second: main flame_431
+  - first:
+      213: 2690173999656036418
+    second: main flame_432
+  - first:
+      213: -1646895966553218560
+    second: main flame_433
+  - first:
+      213: -6208914598417638690
+    second: main flame_434
+  - first:
+      213: -3803735611654702329
+    second: main flame_435
+  - first:
+      213: -3916574415878537179
+    second: main flame_436
+  - first:
+      213: 2647474238306193138
+    second: main flame_437
+  - first:
+      213: 8732711742601155870
+    second: main flame_438
+  - first:
+      213: -5825533386770555604
+    second: main flame_439
+  - first:
+      213: -7787575989244398432
+    second: main flame_440
+  - first:
+      213: 4240162645069060657
+    second: main flame_441
+  - first:
+      213: 2269090862551570201
+    second: main flame_442
+  - first:
+      213: 4253766215878688996
+    second: main flame_443
+  - first:
+      213: -7776357822265803204
+    second: main flame_444
+  - first:
+      213: -1717288580310724571
+    second: main flame_445
+  - first:
+      213: 3473094630922547678
+    second: main flame_446
+  - first:
+      213: 8257877360134294172
+    second: main flame_447
+  - first:
+      213: 8750961438659964117
+    second: main flame_448
+  - first:
+      213: -3167769283199391583
+    second: main flame_449
+  - first:
+      213: -5341410421474860422
+    second: main flame_450
+  - first:
+      213: -8036177500786096244
+    second: main flame_451
+  - first:
+      213: 57190247457672784
+    second: main flame_452
+  - first:
+      213: -4718757655992631784
+    second: main flame_453
+  - first:
+      213: 5915110309834824084
+    second: main flame_454
+  - first:
+      213: -4616121850627308165
+    second: main flame_455
+  - first:
+      213: 4565584345799765245
+    second: main flame_456
+  - first:
+      213: -8252309050833192817
+    second: main flame_457
+  - first:
+      213: -8599542030176588381
+    second: main flame_458
+  - first:
+      213: 4575929926503718667
+    second: main flame_459
+  - first:
+      213: 4319390627932882159
+    second: main flame_460
+  - first:
+      213: 6397057046305647330
+    second: main flame_461
+  - first:
+      213: -5579574296605978908
+    second: main flame_462
+  - first:
+      213: -7632192578694687382
+    second: main flame_463
+  - first:
+      213: -7502980106701626274
+    second: main flame_464
+  - first:
+      213: -3224508788063423431
+    second: main flame_465
+  - first:
+      213: 2022638919191911105
+    second: main flame_466
+  - first:
+      213: 5036093844232097209
+    second: main flame_467
+  - first:
+      213: -7706816007142060856
+    second: main flame_468
+  - first:
+      213: -4029425803421023804
+    second: main flame_469
+  - first:
+      213: 8456351373848094134
+    second: main flame_470
+  - first:
+      213: -5639964679923181763
+    second: main flame_471
+  - first:
+      213: -4987969087598421897
+    second: main flame_472
+  - first:
+      213: -5645466580427252066
+    second: main flame_473
+  - first:
+      213: -7570114424923579095
+    second: main flame_474
+  - first:
+      213: 8640447923002271813
+    second: main flame_475
+  - first:
+      213: 2715743778381414580
+    second: main flame_476
+  - first:
+      213: -8305097460957360268
+    second: main flame_477
+  - first:
+      213: 2187651278416147544
+    second: main flame_478
+  - first:
+      213: 3654103231290355817
+    second: main flame_479
+  - first:
+      213: 1079959634768027789
+    second: main flame_480
+  - first:
+      213: -3804395571953984955
+    second: main flame_481
+  - first:
+      213: 1382006039464244215
+    second: main flame_482
+  - first:
+      213: 3678670374626234321
+    second: main flame_483
+  - first:
+      213: -4785375946922979307
+    second: main flame_484
+  - first:
+      213: 2064842867872699778
+    second: main flame_485
+  - first:
+      213: 658059284021745099
+    second: main flame_486
+  - first:
+      213: 4802542152799515555
+    second: main flame_487
+  - first:
+      213: 7225651169378816485
+    second: main flame_488
+  - first:
+      213: -3293156226198316927
+    second: main flame_489
+  - first:
+      213: -1752159164063903601
+    second: main flame_490
+  - first:
+      213: -4063264579696997927
+    second: main flame_491
+  - first:
+      213: -6077472246063312796
+    second: main flame_492
+  - first:
+      213: -6934777588532976194
+    second: main flame_493
+  - first:
+      213: -147626881167354963
+    second: main flame_494
+  - first:
+      213: 3299316898225406363
+    second: main flame_495
+  - first:
+      213: 4102532824080526213
+    second: main flame_496
+  - first:
+      213: -6890795411230553833
+    second: main flame_497
+  - first:
+      213: -469882367084976924
+    second: main flame_498
+  - first:
+      213: -1572096101953014675
+    second: main flame_499
+  - first:
+      213: 3335879525987561540
+    second: main flame_500
+  - first:
+      213: 3227337362678262636
+    second: main flame_501
+  - first:
+      213: 5885493204331176145
+    second: main flame_502
+  - first:
+      213: -4007791099440373395
+    second: main flame_503
+  - first:
+      213: 710307197980692588
+    second: main flame_504
+  - first:
+      213: -1182931541202774064
+    second: main flame_505
+  - first:
+      213: -8780014783848985360
+    second: main flame_506
+  - first:
+      213: -3282667697854621567
+    second: main flame_507
+  - first:
+      213: 9101428909902912025
+    second: main flame_508
+  - first:
+      213: -6845555540860936591
+    second: main flame_509
+  - first:
+      213: -4369999531667556705
+    second: main flame_510
+  - first:
+      213: -2802510989354787682
+    second: main flame_511
+  - first:
+      213: -4936222897794432625
+    second: main flame_512
+  - first:
+      213: -831835015350149189
+    second: main flame_513
+  - first:
+      213: 7327062793579964257
+    second: main flame_514
+  - first:
+      213: 4036023537759227081
+    second: main flame_515
+  - first:
+      213: 7694724603493096426
+    second: main flame_516
+  - first:
+      213: -6347136801425834126
+    second: main flame_517
+  - first:
+      213: -6803365182255986179
+    second: main flame_518
+  - first:
+      213: -517914608213537715
+    second: main flame_519
+  - first:
+      213: 8487142926615487415
+    second: main flame_520
+  - first:
+      213: 3133487787829562908
+    second: main flame_521
+  - first:
+      213: -6953010777176101972
+    second: main flame_522
+  - first:
+      213: 8618129569604343132
+    second: main flame_523
+  - first:
+      213: -3581765441469528866
+    second: main flame_524
+  - first:
+      213: -4738039562506308740
+    second: main flame_525
+  - first:
+      213: 4502383484765409980
+    second: main flame_526
+  - first:
+      213: -1260138044439011469
+    second: main flame_527
+  - first:
+      213: 8781905372971945841
+    second: main flame_528
+  - first:
+      213: 2694009386886798637
+    second: main flame_529
+  - first:
+      213: -8566595287447548196
+    second: main flame_530
+  - first:
+      213: -6486162830554904429
+    second: main flame_531
+  - first:
+      213: 1658309677845889840
+    second: main flame_532
+  - first:
+      213: -5095082750669496209
+    second: main flame_533
+  - first:
+      213: 5091810843280877239
+    second: main flame_534
+  - first:
+      213: -5294825575601749345
+    second: main flame_535
+  - first:
+      213: 8773324183545119017
+    second: main flame_536
+  - first:
+      213: -1624650009106168353
+    second: main flame_537
+  - first:
+      213: 7581283109927554814
+    second: main flame_538
+  - first:
+      213: -8432131015499651919
+    second: main flame_539
+  - first:
+      213: 7892928306713573561
+    second: main flame_540
+  - first:
+      213: 7318059348879910864
+    second: main flame_541
+  - first:
+      213: 3143209718655616611
+    second: main flame_542
+  - first:
+      213: -2233661187986370769
+    second: main flame_543
+  - first:
+      213: -6351501537751611958
+    second: main flame_544
+  - first:
+      213: 8152070785124220869
+    second: main flame_545
+  - first:
+      213: 8686843078118114696
+    second: main flame_546
+  - first:
+      213: 5099489262453109477
+    second: main flame_547
+  - first:
+      213: 8790258521085691471
+    second: main flame_548
+  - first:
+      213: 1865050185087448921
+    second: main flame_549
+  - first:
+      213: 3255181434658790647
+    second: main flame_550
+  - first:
+      213: 2607913167066188283
+    second: main flame_551
+  - first:
+      213: 3536522376530640691
+    second: main flame_552
+  - first:
+      213: 4327448193554528859
+    second: main flame_553
+  - first:
+      213: 2021127047732965932
+    second: main flame_554
+  - first:
+      213: 8521452256805441739
+    second: main flame_555
+  - first:
+      213: 6599870063693488795
+    second: main flame_556
+  - first:
+      213: 4114367722746022293
+    second: main flame_557
+  - first:
+      213: 8950969467342481058
+    second: main flame_558
+  - first:
+      213: 2331478952781448675
+    second: main flame_559
+  - first:
+      213: 2745935190574578391
+    second: main flame_560
+  - first:
+      213: -9216587297632648403
+    second: main flame_561
+  - first:
+      213: -7769498649055910612
+    second: main flame_562
+  - first:
+      213: -3166709538990563886
+    second: main flame_563
+  - first:
+      213: -5266494409731568147
+    second: main flame_564
+  - first:
+      213: 8421126308855301577
+    second: main flame_565
+  - first:
+      213: 7239148731678598816
+    second: main flame_566
+  - first:
+      213: -4736481420327678131
+    second: main flame_567
+  - first:
+      213: 2457923608139184220
+    second: main flame_568
+  - first:
+      213: 8761088946016288106
+    second: main flame_569
+  - first:
+      213: 8762802122779935718
+    second: main flame_570
+  - first:
+      213: 1939663840116466728
+    second: main flame_571
+  - first:
+      213: 194637887198452124
+    second: main flame_572
+  - first:
+      213: 3341616316763143670
+    second: main flame_573
+  - first:
+      213: -2606530111931872987
+    second: main flame_574
+  - first:
+      213: 7813293415890596869
+    second: main flame_575
+  - first:
+      213: -5911295640387669112
+    second: main flame_576
+  - first:
+      213: -1006791164458587880
+    second: main flame_577
+  - first:
+      213: 4322147693053616446
+    second: main flame_578
+  - first:
+      213: -3094784826484012743
+    second: main flame_579
+  - first:
+      213: 6782607939446550634
+    second: main flame_580
+  - first:
+      213: -2287135632361279519
+    second: main flame_581
+  - first:
+      213: -2404723934729863341
+    second: main flame_582
+  - first:
+      213: -2281810120074351374
+    second: main flame_583
+  - first:
+      213: -1974024451266695350
+    second: main flame_584
+  - first:
+      213: -9211749566902505874
+    second: main flame_585
+  - first:
+      213: -2673669856301346242
+    second: main flame_586
+  - first:
+      213: 3538265682537302207
+    second: main flame_587
+  - first:
+      213: -1035247082922194924
+    second: main flame_588
+  - first:
+      213: -5346269500364156721
+    second: main flame_589
+  - first:
+      213: -454501267739249724
+    second: main flame_590
+  - first:
+      213: -7377291113599537938
+    second: main flame_591
+  - first:
+      213: 5746251657701197804
+    second: main flame_592
+  - first:
+      213: 4531063367738677925
+    second: main flame_593
+  - first:
+      213: -619792419155716041
+    second: main flame_594
+  - first:
+      213: 3367374378231417077
+    second: main flame_595
+  - first:
+      213: 5499720349089226522
+    second: main flame_596
+  - first:
+      213: -3462584499264674737
+    second: main flame_597
+  - first:
+      213: -7998670954645058196
+    second: main flame_598
+  - first:
+      213: 5309752578438117583
+    second: main flame_599
+  - first:
+      213: -1944154294763323074
+    second: main flame_600
+  - first:
+      213: -8179035175740105742
+    second: main flame_601
+  - first:
+      213: 1242662813376263935
+    second: main flame_602
+  - first:
+      213: 3558918135637306366
+    second: main flame_603
+  - first:
+      213: -8248197794126405439
+    second: main flame_604
+  - first:
+      213: -3668485147914726705
+    second: main flame_605
+  - first:
+      213: -482204943731593896
+    second: main flame_606
+  - first:
+      213: -8811534731295904779
+    second: main flame_607
+  - first:
+      213: -510635268007902792
+    second: main flame_608
+  - first:
+      213: 3995734220197730936
+    second: main flame_609
+  - first:
+      213: 865892533248670068
+    second: main flame_610
+  - first:
+      213: 4814355339481345230
+    second: main flame_611
+  - first:
+      213: 7190908839128360347
+    second: main flame_612
+  - first:
+      213: -3476129785830176845
+    second: main flame_613
+  - first:
+      213: -3762026625092230281
+    second: main flame_614
+  - first:
+      213: 730615933914339976
+    second: main flame_615
+  - first:
+      213: -7846378282964559554
+    second: main flame_616
+  - first:
+      213: -916911744855271695
+    second: main flame_617
+  - first:
+      213: -4208832758236956288
+    second: main flame_618
+  - first:
+      213: 7204870255682067709
+    second: main flame_619
+  - first:
+      213: -7918756809387940912
+    second: main flame_620
+  - first:
+      213: -8153325237980229271
+    second: main flame_621
+  - first:
+      213: 1874270836096981256
+    second: main flame_622
+  - first:
+      213: -7628644284649900669
+    second: main flame_623
+  - first:
+      213: 9104673441157463223
+    second: main flame_624
+  - first:
+      213: 6488521988099524672
+    second: main flame_625
+  - first:
+      213: 3377530461748078975
+    second: main flame_626
+  - first:
+      213: -6620769218023305508
+    second: main flame_627
+  - first:
+      213: -3460511708041149428
+    second: main flame_628
+  - first:
+      213: -4564499382745787393
+    second: main flame_629
+  - first:
+      213: -8007016497769491057
+    second: main flame_630
+  - first:
+      213: -6257490141503872252
+    second: main flame_631
+  - first:
+      213: -6177896645247930491
+    second: main flame_632
+  - first:
+      213: 5523111820308687085
+    second: main flame_633
+  - first:
+      213: -3650633084737438293
+    second: main flame_634
+  - first:
+      213: -7226989831738507917
+    second: main flame_635
+  - first:
+      213: 4116191102976280843
+    second: main flame_636
+  - first:
+      213: 3647530163436923352
+    second: main flame_637
+  - first:
+      213: 6372854646151396933
+    second: main flame_638
+  - first:
+      213: 4754593853183161686
+    second: main flame_639
+  - first:
+      213: -7343882344967450652
+    second: main flame_640
+  - first:
+      213: 8962552629567057566
+    second: main flame_641
+  - first:
+      213: -2210082931882757816
+    second: main flame_642
+  - first:
+      213: 2525941281831222797
+    second: main flame_643
+  - first:
+      213: 8754450433134720781
+    second: main flame_644
+  - first:
+      213: -1506246356292143073
+    second: main flame_645
+  - first:
+      213: 6796205670870425075
+    second: main flame_646
+  - first:
+      213: 8010259647154134861
+    second: main flame_647
+  - first:
+      213: -5622586147815622321
+    second: main flame_648
+  - first:
+      213: -9065990707292684522
+    second: main flame_649
+  - first:
+      213: -2903834615511011916
+    second: main flame_650
+  - first:
+      213: -7948582517821791114
+    second: main flame_651
+  - first:
+      213: -8167803687084792636
+    second: main flame_652
+  - first:
+      213: 4968777658025971639
+    second: main flame_653
+  - first:
+      213: -5232071639689869100
+    second: main flame_654
+  - first:
+      213: -8507337898551433787
+    second: main flame_655
+  - first:
+      213: -8170328585004264267
+    second: main flame_656
+  - first:
+      213: -8198211090780713051
+    second: main flame_657
+  - first:
+      213: -3489231173827322281
+    second: main flame_658
+  - first:
+      213: 7638836702395299026
+    second: main flame_659
+  - first:
+      213: -4671493961464329756
+    second: main flame_660
+  - first:
+      213: 2006232745361023223
+    second: main flame_661
+  - first:
+      213: -5128137549059828769
+    second: main flame_662
+  - first:
+      213: -28839556070307837
+    second: main flame_663
+  - first:
+      213: -2489306488156128777
+    second: main flame_664
+  - first:
+      213: -5932545846573428514
+    second: main flame_665
+  - first:
+      213: 6049075176048244170
+    second: main flame_666
+  - first:
+      213: -5157646577065710325
+    second: main flame_667
+  - first:
+      213: -7566508925024949308
+    second: main flame_668
+  - first:
+      213: 4949466099412331882
+    second: main flame_669
+  - first:
+      213: -3789285572446860543
+    second: main flame_670
+  - first:
+      213: -4864014076927506306
+    second: main flame_671
+  - first:
+      213: 3796981873587303064
+    second: main flame_672
+  - first:
+      213: 657467017542286459
+    second: main flame_673
+  - first:
+      213: 4336783386414626955
+    second: main flame_674
+  - first:
+      213: 4615527507455580507
+    second: main flame_675
+  - first:
+      213: 3755996260328643307
+    second: main flame_676
+  - first:
+      213: 8383510682933746212
+    second: main flame_677
+  - first:
+      213: -8926597040454599865
+    second: main flame_678
+  - first:
+      213: 413424541686972199
+    second: main flame_679
+  - first:
+      213: -3277480532264599185
+    second: main flame_680
+  - first:
+      213: 9008536551340585499
+    second: main flame_681
+  - first:
+      213: -3419999732599776715
+    second: main flame_682
+  - first:
+      213: -656396126215967575
+    second: main flame_683
+  - first:
+      213: 4132142490088013259
+    second: main flame_684
+  - first:
+      213: 5886810792101305543
+    second: main flame_685
+  - first:
+      213: 8983626069668532804
+    second: main flame_686
+  - first:
+      213: -8697403186487072140
+    second: main flame_687
+  - first:
+      213: -661026193342872939
+    second: main flame_688
+  - first:
+      213: 4684756269577170563
+    second: main flame_689
+  - first:
+      213: -8140225994207582224
+    second: main flame_690
+  - first:
+      213: -6529516183496865255
+    second: main flame_691
+  - first:
+      213: 8059591563154561789
+    second: main flame_692
+  - first:
+      213: 8249957710563586839
+    second: main flame_693
+  - first:
+      213: -6256553066645636948
+    second: main flame_694
+  - first:
+      213: -8316678042556646500
+    second: main flame_695
+  - first:
+      213: -2289770401299136741
+    second: main flame_696
+  - first:
+      213: 7870678667568910029
+    second: main flame_697
+  - first:
+      213: -1022384259022110899
+    second: main flame_698
+  - first:
+      213: -4693443259022459158
+    second: main flame_699
+  - first:
+      213: 8919584266510123603
+    second: main flame_700
+  - first:
+      213: -7698145581480270304
+    second: main flame_701
+  - first:
+      213: -4636035682245823863
+    second: main flame_702
+  - first:
+      213: -4057843414850041918
+    second: main flame_703
+  - first:
+      213: -1300950558259343077
+    second: main flame_704
+  - first:
+      213: -9060342671771342871
+    second: main flame_705
+  - first:
+      213: 5672870147213345227
+    second: main flame_706
+  - first:
+      213: -6791089380194227260
+    second: main flame_707
+  - first:
+      213: -979279558227250422
+    second: main flame_708
+  - first:
+      213: -5306966776800397890
+    second: main flame_709
+  - first:
+      213: 5537637459340452296
+    second: main flame_710
+  - first:
+      213: 5945443396101848648
+    second: main flame_711
+  - first:
+      213: 688722425506351752
+    second: main flame_712
+  - first:
+      213: 7056399954407700806
+    second: main flame_713
+  - first:
+      213: -6287244022574153781
+    second: main flame_714
+  - first:
+      213: -9176452202328608715
+    second: main flame_715
+  - first:
+      213: 2515786594255469145
+    second: main flame_716
+  - first:
+      213: 4497245518372341186
+    second: main flame_717
+  - first:
+      213: 5301890995451622983
+    second: main flame_718
+  - first:
+      213: -4667523793055192777
+    second: main flame_719
+  - first:
+      213: 5245375429948288315
+    second: main flame_720
+  - first:
+      213: -4845742382491726299
+    second: main flame_721
+  - first:
+      213: 4664743748059132273
+    second: main flame_722
+  - first:
+      213: 4480920928449494528
+    second: main flame_723
+  - first:
+      213: -1976834540569658867
+    second: main flame_724
+  - first:
+      213: 8760061711141880993
+    second: main flame_725
+  - first:
+      213: -7710154449988523635
+    second: main flame_726
+  - first:
+      213: 3219867745269772109
+    second: main flame_727
+  - first:
+      213: -6877922975333546270
+    second: main flame_728
+  - first:
+      213: 7148014226794502836
+    second: main flame_729
+  - first:
+      213: 2958112383588628299
+    second: main flame_730
+  - first:
+      213: 7454960127334097579
+    second: main flame_731
+  - first:
+      213: 1374618788364355029
+    second: main flame_732
+  - first:
+      213: 7045812624704196428
+    second: main flame_733
+  - first:
+      213: -7425899294664941050
+    second: main flame_734
+  - first:
+      213: -542381969757705385
+    second: main flame_735
+  - first:
+      213: -5852620717994183823
+    second: main flame_736
+  - first:
+      213: 4048760638916056841
+    second: main flame_737
+  - first:
+      213: 2363920410301866807
+    second: main flame_738
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: main flame_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1024
+        width: 896
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480273828f9ce4948834c87364ece64d
+      internalID: -2172547921492171533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main flame_1
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1024
+        width: 896
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e731f78fd4774546a405cca48132156
+      internalID: 2534097157289688103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main flame_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 896
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94d01432c01a7541a238e0cd1599ae1
+      internalID: 6507573664668037996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main flame_3
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 896
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce74c70d6fdaa7f488955cc5a96fc739
+      internalID: 6536010176516155910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bb072af3e69dc12418f5899dbf6dc507
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

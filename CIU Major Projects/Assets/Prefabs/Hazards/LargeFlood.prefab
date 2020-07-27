@@ -76,10 +76,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 846155349
   m_SortingLayer: -1
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -2172547921492171533, guid: b28bcdd3900d052449bf807ec487fe55,
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 3088540037929272624, guid: 9f4a1795f0f50764e929aad0043b82cc,
     type: 3}
-  m_Color: {r: 0, g: 0.5609894, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -127,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.96, y: 10.24}
+    oldSize: {x: 0.96875, y: 0.53125}
     newSize: {x: 0.256, y: 0.256}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148,10 +148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19015c6e83425d74ab1399adf795499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMin: -37
-  xMax: 7
-  yMin: -7
-  yMax: 37
+  xMin: -30
+  xMax: 30
+  yMin: -30
+  yMax: 30
 --- !u!95 &2632626652238607279
 Animator:
   serializedVersion: 3
@@ -192,7 +192,11 @@ MonoBehaviour:
   nextDeath: 0
   smallFlood: {fileID: 8366129188988614819, guid: bc01e9f079229c44bb1c812bca13654d,
     type: 3}
-  listFlood: []
+  listFlood:
+  - {fileID: 8366129188988614819, guid: bc01e9f079229c44bb1c812bca13654d, type: 3}
+  - {fileID: 8366129188988614819, guid: bc01e9f079229c44bb1c812bca13654d, type: 3}
+  - {fileID: 8366129188988614819, guid: bc01e9f079229c44bb1c812bca13654d, type: 3}
+  - {fileID: 8366129188988614819, guid: bc01e9f079229c44bb1c812bca13654d, type: 3}
   floodSpawnRate: 5
   nextFloodSpawn: 0
 --- !u!1 &2799143147529654735

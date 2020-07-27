@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 427943807678593752}
   - component: {fileID: 427943807678593755}
   - component: {fileID: 427943807678593753}
+  - component: {fileID: 2550328906962197726}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +55,9 @@ MonoBehaviour:
   loseText: {fileID: 0}
   landHealthSlider: {fileID: 0}
   IsPaused: 0
+  myInputField: {fileID: 0}
   myStates: 0
+  scorekeeper: {fileID: 0}
 --- !u!114 &427943807678593753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,3 +70,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27487dae45084a4d95a23d1a7646aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2550328906962197726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427943807678593754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd3731f28c1e043abda4dc84c70fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0

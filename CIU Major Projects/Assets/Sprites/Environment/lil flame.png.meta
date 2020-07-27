@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e58e8bd976cb6994c987c10fbb203ab4
+guid: 0d2529ad53c4ab7428718f17c3363dfc
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,12 +85,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
@@ -110,10 +110,10 @@ TextureImporter:
       name: lil flame_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 1024
-        width: 800
-        height: 992
+        x: 1
+        y: 16
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +121,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f833d51d7d91ceb41869279a0b5e549a
+      spriteID: 0fd20108d2fa443428048feb9c70ec01
       internalID: 2110255982870760259
       vertices: []
       indices: 
@@ -131,10 +131,10 @@ TextureImporter:
       name: lil flame_1
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 1024
-        width: 800
-        height: 992
+        x: 17
+        y: 16
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f8ae08de03a34940b26249289a64016
+      spriteID: 9706a15c193abe54f856ac0101970ce9
       internalID: 7175728816615707037
       vertices: []
       indices: 
@@ -152,10 +152,10 @@ TextureImporter:
       name: lil flame_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 2
         y: 0
-        width: 800
-        height: 992
+        width: 12
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15b1bacd58f3294ebd59aab69398756
+      spriteID: 110e517268dfaa74386481f175bac7d8
       internalID: -6104554008829665692
       vertices: []
       indices: 
@@ -173,10 +173,10 @@ TextureImporter:
       name: lil flame_3
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 17
         y: 0
-        width: 800
-        height: 992
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8504f6afa305464e913a14c6b1aee86
+      spriteID: 804bc914beb906c4b88c50a17131c0ff
       internalID: 1581769372398826264
       vertices: []
       indices: 
@@ -193,7 +193,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0aa11e0afae68c54baf08d2fc8511649
+    spriteID: f2c104d6f2c88e24894853d5fbb1a755
     internalID: 0
     vertices: []
     indices: 

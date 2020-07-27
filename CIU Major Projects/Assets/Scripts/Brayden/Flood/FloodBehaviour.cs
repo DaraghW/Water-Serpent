@@ -48,7 +48,7 @@ public class FloodBehaviour : MonoBehaviour
     void WaterCheck()
     {
         listFlood = GameObject.FindGameObjectsWithTag("Flood");
-        Debug.Log("There are " + listFlood.Length + " objects");
+        //Debug.Log("There are " + listFlood.Length + " objects");
     }
 
     void FloodDeath()
