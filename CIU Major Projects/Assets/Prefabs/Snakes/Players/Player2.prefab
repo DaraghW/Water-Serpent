@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5843357136526720673}
   m_Layer: 8
   m_Name: Player2
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,8 +73,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 3f87ef277ee024b4ab1dc6dc607d7069, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c,
+    type: 3}
+  m_Color: {r: 0.5235849, g: 1, b: 0.5508601, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,7 +95,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0025558062, y: 0.0051115304}
@@ -154,14 +155,14 @@ MonoBehaviour:
   tailStart: {fileID: 2860166692004481904}
   water: {fileID: 3494320736184451224, guid: bcfee2cf0154d5643884b5298995fea3, type: 3}
   spriteRenderer: {fileID: 392440952095537842}
-  headR: {fileID: 21300000, guid: 3f87ef277ee024b4ab1dc6dc607d7069, type: 3}
-  headL: {fileID: 21300000, guid: 4c8bfeb31151212499eaad92373f468a, type: 3}
-  headD: {fileID: 21300000, guid: dfacc47b501645c45b31562a4a60b313, type: 3}
-  headU: {fileID: 21300000, guid: 6e4235fd6252dab4c9188af3174e21ff, type: 3}
+  headR: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headL: {fileID: 2326076706502517477, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headD: {fileID: -3244538411692950079, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headU: {fileID: 7190913240618219596, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
   currentTail: {fileID: 0}
-  sideTail: {fileID: 2288903646595463400, guid: 7ec88eb173eb8fc45a6a0b85830932ba,
+  sideTail: {fileID: 2288903646595463400, guid: 1b270931c8a8a7843a6d2b967bb4cdf4,
     type: 3}
-  topTail: {fileID: 2288903646595463400, guid: 8c8265278e74fbb4991aad50bb6dcc43, type: 3}
+  topTail: {fileID: 2288903646595463400, guid: e252a6052ef63e2469d1547023110589, type: 3}
 --- !u!114 &5843357136526720673
 MonoBehaviour:
   m_ObjectHideFlags: 0

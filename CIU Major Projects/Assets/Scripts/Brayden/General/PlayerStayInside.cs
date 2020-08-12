@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class PlayerStayInside : MonoBehaviour
 {
-    private void OnTriggerExit2D(Collider2D collision)
+    public GameObject myGameObject;
+    public GameObject[] myTargets;
+
+    public float maxDistance1;
+    public float maxDistance2;
+    public float maxDistance3;
+
+    private void FixedUpdate()
     {
-        if (collision.tag == "PlayerBounds")
-        {
-            transform.position = collision.transform.position;
-        }
+
     }
+
+
 }

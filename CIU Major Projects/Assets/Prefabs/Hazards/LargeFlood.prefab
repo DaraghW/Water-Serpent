@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3233892198156163710}
   - component: {fileID: 2632626652238607279}
   - component: {fileID: 9053239673499147344}
+  - component: {fileID: 1429570389115660145}
   m_Layer: 14
   m_Name: LargeFlood
   m_TagString: LargeFlood
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 846155349
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 3088540037929272624, guid: 9f4a1795f0f50764e929aad0043b82cc,
     type: 3}
@@ -199,6 +200,24 @@ MonoBehaviour:
   - {fileID: 8366129188988614819, guid: bc01e9f079229c44bb1c812bca13654d, type: 3}
   floodSpawnRate: 5
   nextFloodSpawn: 0
+  maxItems: 30
+--- !u!114 &1429570389115660145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675795153805224331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc8362d3e4e2e943b1abbc8dd061a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentGameObject: {fileID: 0}
+  checkRate: 0.5
+  nextCheck: 0.25
+  myRenderer: {fileID: 0}
+  isStatic: 0
 --- !u!1 &2799143147529654735
 GameObject:
   m_ObjectHideFlags: 0

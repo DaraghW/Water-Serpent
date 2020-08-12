@@ -21,6 +21,14 @@ public class FloodBehaviour : MonoBehaviour
     //floats that will be used for spawning our smaller fires over time.
     public float floodSpawnRate;
     public float nextFloodSpawn;
+    public int maxItems;
+
+    int players;
+
+    void Start()
+    {
+        GetPlayerPrefs();
+    }
 
     // Update is called once per frame
     void Update()
@@ -30,10 +38,17 @@ public class FloodBehaviour : MonoBehaviour
         FloodDeath();
     }
 
+    void GetPlayerPrefs()
+    {
+        players = PlayerPrefs.GetInt("players");
+        floodSpawnRate = floodSpawnRate / players;
+
+    }
+
     //The large flood will spawn smaller floods over a period of time. Making them travel in 4 different directions
     void SmallFlood()
     {
-        if (Time.time > nextFloodSpawn && listFlood.Length <= 9)
+        if (Time.time > nextFloodSpawn && listFlood.Length <= maxItems)
         {
             nextFloodSpawn = Time.time + floodSpawnRate;
             //Loop through the spawn points, spawning floods at their positions.

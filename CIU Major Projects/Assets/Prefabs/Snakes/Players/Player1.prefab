@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 5632862279793558954}
   - component: {fileID: 4669739102156760932}
   - component: {fileID: 8455486015662360426}
+  - component: {fileID: 5162900365837473552}
   m_Layer: 8
   m_Name: Player1
-  m_TagString: Player
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,8 +74,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 3f87ef277ee024b4ab1dc6dc607d7069, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c,
+    type: 3}
+  m_Color: {r: 0.4198113, g: 1, b: 0.9136836, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,14 +105,15 @@ MonoBehaviour:
   maxWaterLength: 10
   timer: 0.1
   maxTimer: 0.1
+  myObject: {fileID: 0}
   rb: {fileID: 4669739102156760932}
   tailStart: {fileID: 3980172169982516878}
   water: {fileID: 3494320736184451224, guid: bcfee2cf0154d5643884b5298995fea3, type: 3}
   spriteRenderer: {fileID: 1584995509110091596}
-  headR: {fileID: 21300000, guid: 3f87ef277ee024b4ab1dc6dc607d7069, type: 3}
-  headL: {fileID: 21300000, guid: 4c8bfeb31151212499eaad92373f468a, type: 3}
-  headD: {fileID: 21300000, guid: dfacc47b501645c45b31562a4a60b313, type: 3}
-  headU: {fileID: 21300000, guid: 6e4235fd6252dab4c9188af3174e21ff, type: 3}
+  headR: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headL: {fileID: 2326076706502517477, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headD: {fileID: -3244538411692950079, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headU: {fileID: 7190913240618219596, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
   currentTail: {fileID: 0}
   sideTail: {fileID: 2288903646595463400, guid: 7ec88eb173eb8fc45a6a0b85830932ba,
     type: 3}
@@ -125,7 +128,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0025558062, y: 0.0051115304}
@@ -178,6 +181,23 @@ MonoBehaviour:
   xMax: 30
   yMin: -30
   yMax: 30
+--- !u!114 &5162900365837473552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152138117740573761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc8362d3e4e2e943b1abbc8dd061a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentGameObject: {fileID: 0}
+  checkRate: 0.5
+  nextCheck: 0.25
+  myRenderer: {fileID: 1584995509110091596}
+  isStatic: 0
 --- !u!1 &4141799834986825627
 GameObject:
   m_ObjectHideFlags: 0

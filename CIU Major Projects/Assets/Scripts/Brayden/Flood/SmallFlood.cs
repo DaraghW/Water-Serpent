@@ -14,19 +14,37 @@ public class SmallFlood : MonoBehaviour
     public float nextDecay;
 
     GameObject myController;
-    ScoreKeeper scorekeeper;
+    COOPGameHandle scorekeeper;
     private void Start()
     {
-        myController = GameObject.FindGameObjectWithTag("GameController");
-        scorekeeper = myController.GetComponentInChildren<ScoreKeeper>();
+        myController = GameObject.FindGameObjectWithTag("MultiplayerGameController");
+        scorekeeper = myController.GetComponentInChildren<COOPGameHandle>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player1")
         {
             myGameObject.SetActive(false);
-            scorekeeper.score = scorekeeper.score + 500;
+            scorekeeper.myScores[0] = scorekeeper.myScores[0] + 500;
+        }
+        
+        if (collision.gameObject.tag == "Player2")
+        {
+            myGameObject.SetActive(false);
+            scorekeeper.myScores[1] = scorekeeper.myScores[1] + 500;
+        }
+
+        if (collision.gameObject.tag == "Player3")
+        {
+            myGameObject.SetActive(false);
+            scorekeeper.myScores[2] = scorekeeper.myScores[2] + 500;
+        }
+
+        if (collision.gameObject.tag == "Player4")
+        {
+            myGameObject.SetActive(false);
+            scorekeeper.myScores[3] = scorekeeper.myScores[3] + 500;
         }
 
         if (collision.gameObject.tag == "Fire")
@@ -40,7 +58,7 @@ public class SmallFlood : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground" && Time.time > nextDecay)
         {
-            Debug.Log("Grounded");
+            //Debug.Log("Grounded");
             nextDecay = Time.time + decayRate;
             collision.gameObject.GetComponentInChildren<LandState>().myHealth -= decayAmount;
         }

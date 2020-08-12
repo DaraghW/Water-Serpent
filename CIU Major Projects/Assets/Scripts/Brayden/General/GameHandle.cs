@@ -155,13 +155,13 @@ public class GameHandle : MonoBehaviour
         int newScore = scorekeeper.score;
         PlayerPrefs.SetInt("newScore", newScore);
         PlayerPrefs.Save();
-        Debug.Log("Saving score as amount: " + newScore);
+        //Debug.Log("Saving score as amount: " + newScore);
     }
 
     public void SetName()
     {
         string newName = myInputField.text;
         PlayerPrefs.SetString("newName", newName);
-        Debug.Log(newName);
+        //Debug.Log(newName);
     }
 }

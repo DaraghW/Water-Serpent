@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8991842646634668848}
   - component: {fileID: 4008765503533172108}
+  - component: {fileID: 467979710749702090}
   m_Layer: 0
   m_Name: tree 1
   m_TagString: Untagged
@@ -111,6 +112,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &467979710749702090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189358667134745905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc8362d3e4e2e943b1abbc8dd061a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentGameObject: {fileID: 0}
+  checkRate: 0.5
+  nextCheck: 0.25
+  myRenderer: {fileID: 0}
+  isStatic: 1
 --- !u!1 &5086958748839374407
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,6 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273789190851020545}
   - component: {fileID: 724627351462372204}
+  - component: {fileID: 7527822897252210558}
   m_Layer: 0
   m_Name: Bush 2
   m_TagString: Untagged
@@ -190,3 +209,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7527822897252210558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5086958748839374407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc8362d3e4e2e943b1abbc8dd061a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentGameObject: {fileID: 4008765503533172108}
+  checkRate: 0.5
+  nextCheck: 0.25
+  myRenderer: {fileID: 0}
+  isStatic: 1

@@ -24,6 +24,8 @@ public class FireBehaviour : MonoBehaviour
     //floats that will be used for moving our larger fire around over time.
     public float moveRate;
     public float nextMove;
+    
+    int players;
 
     //A vector 2 that will be used to move our fire around.
     private Vector2 RandomVector(int min, int max)
@@ -33,12 +35,23 @@ public class FireBehaviour : MonoBehaviour
         return new Vector2(x, y);
     }
 
+    void Start()
+    {
+        GetPlayerPrefs();
+    }
+
     void Update()
     {
         FireCheck();
         SmallFire();
         MoveAround();
         FireDeath();
+    }
+
+    void GetPlayerPrefs()
+    {
+        players = PlayerPrefs.GetInt("players");
+        fireSpawnRate = fireSpawnRate / players;
     }
 
     //Handles how our fire moves.

@@ -57,8 +57,6 @@ public class LandState : MonoBehaviour
                 mySprite.color = unHealthyColor;
                 BigBoyHeal();
                 LandDecay();
-
-
                 break;
             default:
                 Debug.Log("REEEEEEEEEEEEEEE");
@@ -112,6 +110,11 @@ public class LandState : MonoBehaviour
         else if (myHealth > 0)
         {
             healthStates = HealthState.unhealthy;
+        }
+
+        if (myHealth <= 0)
+        {
+            myHealth = 0;
         }
     }
 }

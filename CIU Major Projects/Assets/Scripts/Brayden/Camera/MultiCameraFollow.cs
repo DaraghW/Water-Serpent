@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class MultiCameraFollow : MonoBehaviour
 {
-    public List<Transform> targets;
+    public Transform[] targets;
 
     public Vector3 offset;
 
@@ -20,21 +20,30 @@ public class MultiCameraFollow : MonoBehaviour
 
     private Camera cam;
 
+    int players;
+
+
     void Start()
     {
         cam = GetComponent<Camera>();
+        GetPlayerPrefs();
     }
 
     void LateUpdate()
     {
 
-        if (targets.Count == 0)
+        if (targets.Length == 0)
             return;
 
         XZoom();
         YZoom();
 
         Move();
+    }
+
+    void GetPlayerPrefs()
+    {
+        players = PlayerPrefs.GetInt("players");
     }
 
     void XZoom()
@@ -65,7 +74,7 @@ public class MultiCameraFollow : MonoBehaviour
     float GetGreatestDistanceX()
     {
         var bounds = new Bounds(targets[0].position, Vector3.zero);
-        for (int i = 0; i < targets.Count; i++)
+        for (int i = 0; i < targets.Length; i++)
         {
             bounds.Encapsulate(targets[i].position);
         }
@@ -76,7 +85,7 @@ public class MultiCameraFollow : MonoBehaviour
     float GetGreatestDistanceY()
     {
         var bounds = new Bounds(targets[0].position, Vector3.zero);
-        for (int i = 0; i < targets.Count; i++)
+        for (int i = 0; i < targets.Length; i++)
         {
             bounds.Encapsulate(targets[i].position);
         }
@@ -86,7 +95,7 @@ public class MultiCameraFollow : MonoBehaviour
 
     Vector3 GetCenterPoint()
     {
-        if (targets.Count == 1)
+        if (targets.Length == 1)
         {
             return targets[0].position;
         }
@@ -95,9 +104,34 @@ public class MultiCameraFollow : MonoBehaviour
         var bounds = new Bounds(targets[0].position, Vector3.zero);
 
         //loops through all of our objects and sets a box around them.
-        for (int i = 0; i < targets.Count; i++)
+        switch (players)
         {
-            bounds.Encapsulate(targets[i].position);
+            case 4:
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    bounds.Encapsulate(targets[i].position);
+                }
+                break;
+            case 3:
+                for (int i = 0; i < targets.Length - 1; i++)
+                {
+                    bounds.Encapsulate(targets[i].position);
+                }
+                break;
+            case 2:
+                for (int i = 0; i < targets.Length - 2; i++)
+                {
+                    bounds.Encapsulate(targets[i].position);
+                }
+                break;
+            case 1:
+                for (int i = 0; i < targets.Length - 3; i++)
+                {
+                    bounds.Encapsulate(targets[i].position);
+                }
+                break;
+            default:
+                break;
         }
 
         return bounds.center;
