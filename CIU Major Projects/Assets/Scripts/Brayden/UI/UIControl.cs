@@ -14,27 +14,9 @@ public class UIControl : MonoBehaviour
         SetSelection();
     }
 
-    private void Update()
-    {
-        //ChangeButtonInt();
-    }
-
     void SetSelection()
     {
         i = 0;
         myButtons[i].Select();
-    }
-    void ChangeButtonInt()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            i += 1;
-            myButtons[i].Select();
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            i -= 1;
-            myButtons[i].Select();
-        }
     }
 }

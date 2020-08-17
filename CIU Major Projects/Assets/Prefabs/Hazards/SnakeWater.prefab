@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3494320736184451225}
   - component: {fileID: -2987050277956086669}
   m_Layer: 0
-  m_Name: WaterHazard
+  m_Name: SnakeWater
   m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

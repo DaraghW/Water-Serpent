@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class COOPGameHandle : MonoBehaviour
 {
@@ -19,25 +18,20 @@ public class COOPGameHandle : MonoBehaviour
 
     //A pause boolean to keep track of the pause states.
     public bool IsPaused = false;
+    public float nextScore, scoreRate, time;
+    public Slider HPSlider;
 
-    int players;
+    //The time text.
+    public Text myTimerText, endText;
+    public Text[] myScoreText, endScoretext;
 
-    //The time.
-    public float time;
-    public Text myTimerText;
-
-    //Our pause & end of round panels.
+    //Our pause & end of round panels, our players & player panels.
     public GameObject pausePanel, losePanel;
+    public GameObject[] myPlayers, myPanels, endScorePanels;
 
-    //Areference to our gameObjects and players.
-    public GameObject[] myPlayers;
-    public GameObject[] myPanels;
-
-    public int[] myScores;
-    public float nextScore;
-    public float scoreRate; 
-    public Text[] myScoreText;
-
+    //The number of players, our scores, our time & scoring rates.
+    int players;
+    public int[] myScores, newScores;
 
     // Start is called before the first frame update
     void Start()
@@ -99,15 +93,19 @@ public class COOPGameHandle : MonoBehaviour
         {
             case 1:
                 SetPlayersActive();
+                SetEndScoresActive();
                 break;
             case 2:
                 SetPlayersActive();
+                SetEndScoresActive();
                 break;
             case 3:
                 SetPlayersActive();
+                SetEndScoresActive();
                 break;
             case 4:
                 SetPlayersActive();
+                SetEndScoresActive();
                 break;
             default:
                 break;
@@ -157,6 +155,41 @@ public class COOPGameHandle : MonoBehaviour
                 myScores[i] += 1;
             }
         }
+
+        //A check to make sure our health stays at 0 if it is reached.
+        if (LandHealth.health <= 0)
+        {
+            LandHealth.health = 0;
+        }
+
+        //Handles what happens when our health reaches 0.
+        if (HPSlider.value <= 0)
+        {
+            EndOfRound();
+            SaveScores();
+        }
+    }
+
+    //Handles how the game ends, sets the lose UI for each of the players, changes to the lose state.
+    void EndOfRound()
+    {
+        myStates = GameState.Lose;
+        Time.timeScale = 0f;
+        losePanel.SetActive(true);
+        endText.text = "You lasted a total of " + time.ToString() + " seconds";
+
+        for (int i = 0; i < myScores.Length; i++)
+        {
+            endScoretext[i].text = myScores[i].ToString();
+        }
+    }
+
+    void SetEndScoresActive()
+    {
+        for (int i = 0; i < players; i++)
+        {
+            endScorePanels[i].SetActive(true);
+        }
     }
 
     //Changes a bunch of the UI for the timer, score & health. Changes the value for our health slider.
@@ -167,5 +200,15 @@ public class COOPGameHandle : MonoBehaviour
             myScoreText[i].text = myScores[i].ToString();
         }
         myTimerText.text = time.ToString("F0");
+    }
+
+    void SaveScores()
+    {
+        for (int i = 0; i < myScores.Length; i++)
+        {
+            newScores[i] = myScores[i];
+            PlayerPrefs.SetInt("newScore" + i, newScores[i]);
+            PlayerPrefs.Save();
+        }
     }
 }
