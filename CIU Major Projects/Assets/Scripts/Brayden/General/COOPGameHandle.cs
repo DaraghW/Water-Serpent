@@ -118,6 +118,7 @@ public class COOPGameHandle : MonoBehaviour
         Time.timeScale = 0f;
         pausePanel.SetActive(true);
         IsPaused = true;
+        FindObjectOfType<AudioManager>().Play("ButtonBack");
     }
 
     //Unpauses the game, changing timescale and setting our pause canvas to INactive.
@@ -126,6 +127,7 @@ public class COOPGameHandle : MonoBehaviour
         Time.timeScale = 1f;
         pausePanel.SetActive(false);
         IsPaused = false;
+        FindObjectOfType<AudioManager>().Play("ButtonForward");
     }
 
     //For our pause panel button, if the player chooses to click with the mouse.
@@ -133,12 +135,14 @@ public class COOPGameHandle : MonoBehaviour
     {
         myStates = GameState.Unpaused;
         IsPaused = false;
+        FindObjectOfType<AudioManager>().Play("ButtonForward");
     }
 
     public void ButtonPause()
     {
         myStates = GameState.Paused;
         IsPaused = true;
+        FindObjectOfType<AudioManager>().Play("ButtonBack");
     }
 
     void GameHandler()

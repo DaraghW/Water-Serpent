@@ -9,6 +9,7 @@ public class SceneChange : MonoBehaviour
     {
         //Saves our playerAmount int to whatever amount is chosen to player prefs.
         //Loads the co op scene.
+        FindObjectOfType<AudioManager>().Play("ButtonForward");
         PlayerPrefs.SetInt("players", playerAmount);
         Debug.Log(playerAmount);
         SceneManager.LoadScene("Co-OpScene");
@@ -16,16 +17,19 @@ public class SceneChange : MonoBehaviour
 
     public void VsScene()
     {
+        FindObjectOfType<AudioManager>().Play("ButtonForward");
         SceneManager.LoadScene("VS-Scene");
     }
 
     public void MainMenu()
     {
+        FindObjectOfType<AudioManager>().Play("ButtonBack");
         SceneManager.LoadScene("MainMenu");
     }
 
     public void HighScores()
     {
+        FindObjectOfType<AudioManager>().Play("ButtonForward");
         SceneManager.LoadScene("HighScores");
     }
 

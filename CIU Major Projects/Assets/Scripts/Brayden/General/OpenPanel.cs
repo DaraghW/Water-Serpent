@@ -17,16 +17,19 @@ public class OpenPanel : MonoBehaviour
         {
             isOpen = true;
             gameObject.SetActive(true);
+            FindObjectOfType<AudioManager>().Play("PanelOpen");
         }
         else if (isOpen == true)
         {
             isOpen = false;
             gameObject.SetActive(false);
+            FindObjectOfType<AudioManager>().Play("ButtonBack");
         }
     }
 
     public void CloseThePanel(GameObject gameObject)
     {
         gameObject.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("ButtonBack");
     }
 }

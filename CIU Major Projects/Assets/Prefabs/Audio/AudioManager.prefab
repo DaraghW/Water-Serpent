@@ -43,4 +43,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d3233cde6cdf84e9dc0af1900392d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: ButtonForward
+    clip: {fileID: 8300000, guid: fd86bdc76307b7749a9a4d78088971d3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ButtonBack
+    clip: {fileID: 8300000, guid: 6e341df8b0bc3ab41bc091382562df53, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PanelOpen
+    clip: {fileID: 8300000, guid: 0d37e9cfd3bb5934285d7a39abc42296, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 78917644ed401bf409e0545a49cd69a4, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
