@@ -34,6 +34,9 @@ public class Player2Mov : MonoBehaviour
     public GameObject sideTail;
     public GameObject topTail;
 
+    //Consumables
+    public ConsumableSpawner consumableSpawnerScript;
+
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -142,18 +145,24 @@ public class Player2Mov : MonoBehaviour
         {
             Grow();
             print("egg eaten");
+            Destroy(collision.gameObject);
+            consumableSpawnerScript.consumableCurrentCount--;
         }
         if (collision.gameObject.tag == "Insect")
         {
+            Destroy(collision.gameObject);
             Grow();
             Insect();
             print("bug eaten");
+            consumableSpawnerScript.consumableCurrentCount--;
         }
         if (collision.gameObject.tag == "Rat")
         {
+            Destroy(collision.gameObject);
             Grow();
-            maxWaterLength += 3;
+            Rat();
             print("rat eaten");
+            consumableSpawnerScript.consumableCurrentCount--;
         }
     }
 
@@ -166,6 +175,11 @@ public class Player2Mov : MonoBehaviour
     {
         rTime = 3;
     }
+    void Rat()
+    {
+        maxWaterLength += 3;
+    }
+
 
     void Fail()
     {

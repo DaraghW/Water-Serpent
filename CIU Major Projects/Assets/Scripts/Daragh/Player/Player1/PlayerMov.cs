@@ -148,7 +148,7 @@ public class PlayerMov : MonoBehaviour
             Grow();
             print("egg eaten");
             Destroy(collision.gameObject);
-            consumableSpawnerScript.consumableCount--;
+            consumableSpawnerScript.consumableCurrentCount--;
         }
         if (collision.gameObject.tag == "Insect")
         {
@@ -156,7 +156,7 @@ public class PlayerMov : MonoBehaviour
             Grow();
             Insect();
             print("bug eaten");
-            consumableSpawnerScript.consumableCount--;
+            consumableSpawnerScript.consumableCurrentCount--;
         }
         if (collision.gameObject.tag == "Rat")
         {
@@ -164,7 +164,7 @@ public class PlayerMov : MonoBehaviour
             Grow();
             Rat();
             print("rat eaten");
-            consumableSpawnerScript.consumableCount--;
+            consumableSpawnerScript.consumableCurrentCount--;
         }
     }
 

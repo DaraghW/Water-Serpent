@@ -9,16 +9,13 @@ using UnityEngine.UI;
 public class Loader : MonoBehaviour
 {
     //Our text box that refrence our scores and names.
-    public Text[] scoreText;
-    public Text[] nameText;
+    public Text[] scoreText, nameText;
+    public GameObject entryTemplate;
+    public Transform entryArea;
 
-    //Our score and name values.
-    public int[] myScores;
-    public string[] myNames;
-
-    //Our new score and name references.
-    public int newScore;
-    public string newName;
+    //Our score and name values. As well as our new names & scores.
+    public int[] myScores, newScores;
+    public string[] myNames, newNames;
 
     //Calls our functions that get, set, sort & display the data as well as append new data.
     void Start()
@@ -35,26 +32,22 @@ public class Loader : MonoBehaviour
     //Sorts our list of scores in order.
     void SortData()
     {
+        //Sorts the score array.
         Array.Sort(myScores);
-        for (int i = 0; i < myNames.Length && myNames.Length > 2; i++)
-        {
-            for (int j = i + 0; j < myNames.Length; j++)
-            {
-                if (myNames[i].Length < myNames[j].Length)
-                {
-                    string tempString = myNames[i];
-                    myNames[i] = myNames[j];
-                    myNames[j] = tempString;
-                }
-            }
-        }
     }
 
     //handles how we get our player data for our scores & names.
     void GetPlayerData()
     {
-        newScore = PlayerPrefs.GetInt("newScore");
-        newName = PlayerPrefs.GetString("newName");
+
+        for (int i = 0; i < newScores.Length; i++)
+        {
+            newScores[i] = PlayerPrefs.GetInt("newScore" + i.ToString());
+        }
+        for (int i = 0; i < newNames.Length; i++)
+        {
+            newNames[i] = PlayerPrefs.GetString("newName" + i.ToString());
+        }
 
         for (int j = 0; j < myScores.Length; j++)
         {
@@ -70,11 +63,20 @@ public class Loader : MonoBehaviour
     void SetNewScore()
     {
         //If the new highscore is larger than the lowest score, delete the old score and add the new score + name.
-        if (newScore > myScores[0])
+        for (int i = 0; i < newScores.Length; i++)
         {
-            myScores[0] = newScore;
-            myNames[0] = newName;
-        }
+            if (newScores[i] > myScores[i])
+            {
+                //Add new Entry
+                myScores[i] = newScores[i];
+                myNames[i] = newNames[i];
+            }
+        } 
+    }
+
+    void AddNewEntry()
+    { 
+        
     }
 
     //Loops through our code for each data entry in our score & name arrays. Sets our player prefs for each.

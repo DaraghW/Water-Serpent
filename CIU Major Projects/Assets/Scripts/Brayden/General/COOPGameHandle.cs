@@ -204,6 +204,8 @@ public class COOPGameHandle : MonoBehaviour
             myScoreText[i].text = myScores[i].ToString();
         }
         myTimerText.text = time.ToString("F0");
+
+        HPSlider.value = LandHealth.health;
     }
 
     void SaveScores()

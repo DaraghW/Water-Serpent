@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9053239673499147344}
   - component: {fileID: 1429570389115660145}
   - component: {fileID: 7628570370442353140}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: LargeFlood
   m_TagString: LargeFlood
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6248701626140139231}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: SpawnPointUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8850211627532605635}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: SpawnPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6701335417292450962}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: SpawnPointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7652752052573595917}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: SpawnPointDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}

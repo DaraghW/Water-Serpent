@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8759875779306033722}
   - component: {fileID: 8212512605562780651}
   - component: {fileID: -957173061496031252}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: LargeFire
   m_TagString: LargeFire
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   smallFire: {fileID: 7509759631618934979, guid: ae280fa2a7c35a34ab68125985a92fc1,
     type: 3}
   listFire: []
-  fireSpawnRate: 5
+  fireSpawnRate: 2
   nextFireSpawn: 0
   myRb: {fileID: 3394831198372515224}
   myFire: {fileID: 4769837152344564175}

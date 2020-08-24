@@ -58,6 +58,7 @@ public class SmallFire : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground" && Time.time > nextDecay)
         {
+            Debug.Log("Im On Fire!");
             nextDecay = Time.time + decayRate;
             collision.gameObject.GetComponentInChildren<LandState>().myHealth -= decayAmount;
         }

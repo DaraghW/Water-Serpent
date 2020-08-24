@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2288903646595463407}
   - component: {fileID: 2288903646595463406}
   - component: {fileID: 4315729477857568375}
-  - component: {fileID: -6764649745124243834}
+  - component: {fileID: -6666016761550371583}
   m_Layer: 0
   m_Name: Tail Top
   m_TagString: Tail
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -79
   m_Sprite: {fileID: -7165531694232990136, guid: 7adae77e9eaf987428e6fd52a73f0a3c,
     type: 3}
   m_Color: {r: 0.41960788, g: 1, b: 0.91372555, a: 1}
@@ -98,7 +98,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5927558
---- !u!114 &-6764649745124243834
+--- !u!114 &-6666016761550371583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,11 +107,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2288903646595463400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc8362d3e4e2e943b1abbc8dd061a49, type: 3}
+  m_Script: {fileID: 11500000, guid: 61b09b4482b41114095865339aab8879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentGameObject: {fileID: 0}
-  checkRate: 0.5
-  nextCheck: 0.25
-  myRenderer: {fileID: 2288903646595463406}
-  isStatic: 1
+  myObject: {fileID: 2288903646595463406}

@@ -8,6 +8,10 @@ public class LandState : MonoBehaviour
     public Color medHealthyColor;
     public Color unHealthyColor;
 
+    public float decayRate;
+    public float decayAmount;
+    public float nextDecay;
+
     //An enumerator for our health states.
     public enum HealthState
     { 
@@ -93,7 +97,11 @@ public class LandState : MonoBehaviour
 
     void LandDecay()
     {
-        LandHealth.health = LandHealth.health - 0.5f;
+        if(Time.time > nextDecay)
+        {
+            nextDecay = Time.time + decayRate;
+            LandHealth.health = LandHealth.health - decayAmount;
+        }   
     }
 
     //Handles the health states of the land.

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5783480688211587738}
   - component: {fileID: 7943951682390031568}
   - component: {fileID: 5843357136526720673}
+  - component: {fileID: -1432408639274555928}
   m_Layer: 8
   m_Name: Player3
   m_TagString: Player3
@@ -163,6 +164,7 @@ MonoBehaviour:
   sideTail: {fileID: 2288903646595463400, guid: 87c7a5b0a1c54db429c64e8abbc5b2e6,
     type: 3}
   topTail: {fileID: 2288903646595463400, guid: fc90121b1c31442468716faa97749997, type: 3}
+  consumableSpawnerScript: {fileID: 0}
 --- !u!114 &5843357136526720673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +181,24 @@ MonoBehaviour:
   xMax: 30
   yMin: -30
   yMax: 30
+--- !u!114 &-1432408639274555928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338047634775597503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b21c0c2ce108844a418966a43dd795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  maxDistance: 15
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &3024047245512774245
 GameObject:
   m_ObjectHideFlags: 0

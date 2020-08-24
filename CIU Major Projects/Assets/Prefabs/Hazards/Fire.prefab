@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5211268845029702143}
   - component: {fileID: 4687967709686034199}
   - component: {fileID: 3739279909299453308}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Fire
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -96,8 +96,8 @@ MonoBehaviour:
   myGameObject: {fileID: 7509759631618934979}
   largeFire: {fileID: 4769837152344564175, guid: 21e9de625c318f546a8c5eb25dccf175,
     type: 3}
-  decayRate: 4
-  decayAmount: 2
+  decayRate: 1
+  decayAmount: 1
   nextDecay: 0
 --- !u!50 &5211268845029702143
 Rigidbody2D:

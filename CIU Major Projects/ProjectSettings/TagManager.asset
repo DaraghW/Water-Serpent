@@ -21,6 +21,7 @@ TagManager:
   - Player3
   - Player4
   - MultiplayerGameController
+  - PlayerBox
   layers:
   - Default
   - TransparentFX
