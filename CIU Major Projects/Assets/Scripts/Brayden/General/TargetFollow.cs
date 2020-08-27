@@ -29,7 +29,7 @@ public class TargetFollow : MonoBehaviour
     {
         for (int i = 0; i < players; i++)
         {
-            if (Vector2.Distance(transform.position, targets[i].position) > maxDistance)
+            if (Vector2.Distance(transform.position, targets[i].position) > maxDistance && targets[i].gameObject.activeSelf == true)
             {
                 transform.position = Vector2.MoveTowards(transform.position, targets[i].position, speed * Time.deltaTime);
             }

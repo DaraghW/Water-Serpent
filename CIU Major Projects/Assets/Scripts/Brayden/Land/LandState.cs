@@ -8,9 +8,9 @@ public class LandState : MonoBehaviour
     public Color medHealthyColor;
     public Color unHealthyColor;
 
-    public float decayRate;
-    public float decayAmount;
-    public float nextDecay;
+    public float decayRate, decayAmount, nextDecay;
+    public float fireDecayRate, fireDecayAmount, nextFireDecay;
+    public float waterDecayRate, waterDecayAmount, nextWaterDecay;
 
     //An enumerator for our health states.
     public enum HealthState
@@ -50,7 +50,6 @@ public class LandState : MonoBehaviour
         switch (healthStates)
         {
             case HealthState.healthy:
-                mySprite.color = healthyColor;
                 Heal();
                 break;
             case HealthState.mediumhealthy:
@@ -65,6 +64,23 @@ public class LandState : MonoBehaviour
             default:
                 Debug.Log("REEEEEEEEEEEEEEE");
                 break;
+        }
+    }
+
+    //Handles how our ground decays when a hazard is on it.
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Fire" && Time.time > nextFireDecay)
+        {
+            Debug.Log("Fired");
+            nextFireDecay = Time.time + fireDecayRate;
+            myHealth -= fireDecayAmount;
+        }
+
+        if (collision.gameObject.tag == "Flood" && Time.time > nextWaterDecay)
+        {
+            nextWaterDecay = Time.time + waterDecayRate;
+            myHealth -= waterDecayAmount;
         }
     }
 

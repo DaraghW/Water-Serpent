@@ -54,7 +54,7 @@ public class FloodBehaviour : MonoBehaviour
             //Loop through the spawn points, spawning floods at their positions.
             for (int i = 0; i < spawnPoints.Length; i++)
             {
-                Instantiate(smallFlood, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
+                Instantiate(smallFlood, spawnPoints[i].transform.position, Quaternion.identity);
             }
         }
     }

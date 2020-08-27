@@ -8,11 +8,6 @@ public class SmallFlood : MonoBehaviour
     public GameObject myGameObject;
     public GameObject largeFlood;
 
-    //The amount of health that will be taken from the land by the water at certain intervals.
-    public float decayRate;
-    public float decayAmount;
-    public float nextDecay;
-
     GameObject myController;
     COOPGameHandle scorekeeper;
     private void Start()
@@ -50,17 +45,6 @@ public class SmallFlood : MonoBehaviour
         if (collision.gameObject.tag == "Fire")
         {
             Destroy(myGameObject);
-        }
-    }
-
-    //Handles how our ground decays when this hazard is on it.
-    void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Ground" && Time.time > nextDecay)
-        {
-            //Debug.Log("Grounded");
-            nextDecay = Time.time + decayRate;
-            collision.gameObject.GetComponentInChildren<LandState>().myHealth -= decayAmount;
         }
     }
 

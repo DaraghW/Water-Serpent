@@ -52,15 +52,4 @@ public class SmallFire : MonoBehaviour
             Destroy(myGameObject);
         }
     }
-
-    //Handles how our ground decays when this hazard is on it.
-    void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Ground" && Time.time > nextDecay)
-        {
-            Debug.Log("Im On Fire!");
-            nextDecay = Time.time + decayRate;
-            collision.gameObject.GetComponentInChildren<LandState>().myHealth -= decayAmount;
-        }
-    }
 }
