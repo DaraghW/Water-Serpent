@@ -9,23 +9,27 @@ public class ConsumableMovement : MonoBehaviour
     public float startWaitTime;
 
     public Vector2 moveSpots;
-    private int randomSpot;
     public int xPos;
     public int yPos;
     private Vector2 velocity;
     public float maxSpeed = 2;
 
+    Animator anim;
+
     void Start()
     {
         MakeRandomPosition();
+
+        anim = GetComponent<Animator>();
+
     }
 
     void Update()
     {
         Move();
-        LookAt();
+        //Flip();
     }
-
+    
     private void MakeRandomPosition()
     {
         xPos = Random.Range(-29, 29);
@@ -44,17 +48,21 @@ public class ConsumableMovement : MonoBehaviour
             if (waitTime <= 0)
             {
                 MakeRandomPosition();
-                //randomSpot = Random.Range(0, moveSpots.Length);
             }
             else
             {
                 waitTime -= Time.deltaTime;
             }
         }
-    }
 
-    private void LookAt()
-    {
-        //snap its direction towards what its looking at
+        anim.SetBool("isWalking", true);
+        anim.SetBool("isIdle", false);
+
     }
+    /*
+    private void Flip()
+    {
+
+    }
+    */
 }

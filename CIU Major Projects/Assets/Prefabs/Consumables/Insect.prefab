@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8686316297618974581}
   - component: {fileID: -3173755094666538921}
   - component: {fileID: 6058685227204906713}
+  - component: {fileID: -4794751616177644823}
   m_Layer: 0
   m_Name: Insect
   m_TagString: Insect
@@ -124,4 +125,23 @@ MonoBehaviour:
   moveSpots: {x: 0, y: 0}
   xPos: 0
   yPos: 0
-  maxSpeed: 2
+  maxSpeed: 1
+--- !u!95 &-4794751616177644823
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2634955255950440682}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6b13d317533c6848a3fb528299add50, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

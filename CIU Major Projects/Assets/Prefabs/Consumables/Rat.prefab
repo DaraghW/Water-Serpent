@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2668482739086369614}
   - component: {fileID: 43853206423014486}
   - component: {fileID: 8139435511484396168}
+  - component: {fileID: 6679887537584409038}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Rat
@@ -125,3 +126,22 @@ MonoBehaviour:
   xPos: 0
   yPos: 0
   maxSpeed: 2
+--- !u!95 &6679887537584409038
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6383903572338868735}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e36b67fd45a9cdf4ab9d0dbc35439bda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
