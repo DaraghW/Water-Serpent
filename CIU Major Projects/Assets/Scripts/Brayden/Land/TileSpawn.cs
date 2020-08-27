@@ -9,7 +9,7 @@ public class TileSpawn : MonoBehaviour
     SpriteRenderer myRenderer;
     public Sprite[] mySprites;
     public Color[] myColors;
-    public Vector2 xPos, yPos;
+    public float xPos, yPos;
     public int maxHeight, maxLength;
 
     private void Start()
@@ -24,7 +24,7 @@ public class TileSpawn : MonoBehaviour
         {
             for (int i = 0; i < maxLength; i++)
             {
-                Instantiate(myTilePiece, myParentObject.transform.position + new Vector3(i * 2.0F, j * 2.0F, 0), Quaternion.identity);
+                Instantiate(myTilePiece, myParentObject.transform.position + new Vector3(i * xPos, j * yPos, 0), Quaternion.identity);
                 UpdateTiles();
             }
         }

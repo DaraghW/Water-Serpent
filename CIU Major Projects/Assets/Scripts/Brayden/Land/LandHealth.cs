@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class LandHealth : MonoBehaviour
 {
-    public static float health = 100;
-    public static float maxHealth = 100;
+    public float health = 100;
+    public float maxHealth = 100;
 
     void Start()
     {

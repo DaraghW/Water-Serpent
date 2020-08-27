@@ -150,10 +150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19015c6e83425d74ab1399adf795499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMin: -30
-  xMax: 30
-  yMin: -30
-  yMax: 30
+  xMin: -15
+  xMax: 15
+  yMin: -15
+  yMax: 15
 --- !u!95 &2632626652238607279
 Animator:
   serializedVersion: 3

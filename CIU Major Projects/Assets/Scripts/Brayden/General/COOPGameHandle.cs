@@ -21,6 +21,8 @@ public class COOPGameHandle : MonoBehaviour
     public float nextScore, scoreRate, time;
     public Slider HPSlider;
 
+    public LandHealth myLand;
+
     //The time text.
     public Text myTimerText, endText;
     public Text[] myScoreText, endScoretext;
@@ -161,9 +163,9 @@ public class COOPGameHandle : MonoBehaviour
         }
 
         //A check to make sure our health stays at 0 if it is reached.
-        if (LandHealth.health <= 0)
+        if (myLand.health <= 0)
         {
-            LandHealth.health = 0;
+            myLand.health = 0;
         }
 
         //Handles what happens when our health reaches 0.
@@ -205,7 +207,7 @@ public class COOPGameHandle : MonoBehaviour
         }
         myTimerText.text = time.ToString("F0");
 
-        HPSlider.value = LandHealth.health;
+        HPSlider.value = myLand.health;
     }
 
     void SaveScores()

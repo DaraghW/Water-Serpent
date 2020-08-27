@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2965776721541729432}
   - component: {fileID: 1584995509110091596}
-  - component: {fileID: 1094715381205733870}
   - component: {fileID: 5632862279793558954}
   - component: {fileID: 4669739102156760932}
   - component: {fileID: 8455486015662360426}
   - component: {fileID: 5162900365837473552}
   - component: {fileID: 8232094330257461214}
+  - component: {fileID: 3341519177097600448}
   m_Layer: 8
   m_Name: Player1
   m_TagString: Player1
@@ -87,38 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1094715381205733870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152138117740573761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92515afd102f7054e9ebdd364d403588, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  regSpeed: 3
-  turnDelay: 0.5
-  maxTailLength: 5
-  maxWaterLength: 10
-  timer: 0.1
-  maxTimer: 0.1
-  rb: {fileID: 4669739102156760932}
-  tailStart: {fileID: 3980172169982516878}
-  water: {fileID: 3494320736184451224, guid: bcfee2cf0154d5643884b5298995fea3, type: 3}
-  spriteRenderer: {fileID: 1584995509110091596}
-  headR: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  headL: {fileID: 2326076706502517477, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  headD: {fileID: -3244538411692950079, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  headU: {fileID: 7190913240618219596, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  currentTail: {fileID: 0}
-  sideTail: {fileID: 2288903646595463400, guid: 7ec88eb173eb8fc45a6a0b85830932ba,
-    type: 3}
-  topTail: {fileID: 2288903646595463400, guid: 8c8265278e74fbb4991aad50bb6dcc43, type: 3}
-  consumableSpawnerScript: {fileID: 0}
 --- !u!61 &5632862279793558954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -178,10 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19015c6e83425d74ab1399adf795499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMin: -30
-  xMax: 30
-  yMin: -30
-  yMax: 30
+  xMin: -15
+  xMax: 15
+  yMin: -15
+  yMax: 15
 --- !u!114 &5162900365837473552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,9 +182,44 @@ MonoBehaviour:
   speed: 5
   maxDistance: 15
   targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4153934884747794790, guid: 13340524eccb3a348b7112d7ecac9a81, type: 3}
+  - {fileID: 4153934884747794790, guid: 5648ddf1cc9d634428b3751f10c2851a, type: 3}
+  - {fileID: 4153934884747794790, guid: 9e98c944d89602242accf3ad02b07c6e, type: 3}
+--- !u!114 &3341519177097600448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152138117740573761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55e54cf478549544870b4811f7c5796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  regSpeed: 3
+  turnDelay: 0.5
+  maxTailLength: 5
+  maxWaterLength: 10
+  timer: 0.1
+  maxTimer: 0.1
+  rTime: 0
+  tTime: 0
+  rb: {fileID: 4669739102156760932}
+  tailStart: {fileID: 3980172169982516878}
+  water: {fileID: 3494320736184451224, guid: bcfee2cf0154d5643884b5298995fea3, type: 3}
+  myObject: {fileID: 152138117740573761}
+  spriteRenderer: {fileID: 1584995509110091596}
+  headR: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headL: {fileID: 2326076706502517477, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headD: {fileID: -3244538411692950079, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headU: {fileID: 7190913240618219596, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  currentTail: {fileID: 0}
+  sideTail: {fileID: 2288903646595463400, guid: 7ec88eb173eb8fc45a6a0b85830932ba,
+    type: 3}
+  topTail: {fileID: 2288903646595463400, guid: 8c8265278e74fbb4991aad50bb6dcc43, type: 3}
+  consumableSpawnerScript: {fileID: 0}
 --- !u!1 &4141799834986825627
 GameObject:
   m_ObjectHideFlags: 0

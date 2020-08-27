@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 392440952095537842}
   - component: {fileID: 6820351535087226964}
   - component: {fileID: 5783480688211587738}
-  - component: {fileID: 7943951682390031568}
   - component: {fileID: 5843357136526720673}
   - component: {fileID: -1432408639274555928}
+  - component: {fileID: 6756439323524753933}
   m_Layer: 8
   m_Name: Player3
   m_TagString: Player3
@@ -133,38 +133,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7943951682390031568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338047634775597503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 029319273993f74459e4b37ac66d2f13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  regSpeed: 3
-  turnDelay: 0.5
-  maxTailLength: 5
-  maxWaterLength: 10
-  timer: 0.1
-  maxTimer: 0.1
-  rb: {fileID: 5783480688211587738}
-  tailStart: {fileID: 2860166692004481904}
-  water: {fileID: 3494320736184451224, guid: bcfee2cf0154d5643884b5298995fea3, type: 3}
-  spriteRenderer: {fileID: 392440952095537842}
-  headR: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  headL: {fileID: 2326076706502517477, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  headD: {fileID: -3244538411692950079, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  headU: {fileID: 7190913240618219596, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
-  currentTail: {fileID: 0}
-  sideTail: {fileID: 2288903646595463400, guid: 87c7a5b0a1c54db429c64e8abbc5b2e6,
-    type: 3}
-  topTail: {fileID: 2288903646595463400, guid: fc90121b1c31442468716faa97749997, type: 3}
-  consumableSpawnerScript: {fileID: 0}
 --- !u!114 &5843357136526720673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,10 +145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19015c6e83425d74ab1399adf795499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMin: -30
-  xMax: 30
-  yMin: -30
-  yMax: 30
+  xMin: -15
+  xMax: 15
+  yMin: -15
+  yMax: 15
 --- !u!114 &-1432408639274555928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,9 +164,44 @@ MonoBehaviour:
   speed: 5
   maxDistance: 15
   targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2965776721541729432, guid: ab993181d22512945839d18741ff61ab, type: 3}
+  - {fileID: 4153934884747794790, guid: 13340524eccb3a348b7112d7ecac9a81, type: 3}
+  - {fileID: 4153934884747794790, guid: 9e98c944d89602242accf3ad02b07c6e, type: 3}
+--- !u!114 &6756439323524753933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338047634775597503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55e54cf478549544870b4811f7c5796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  regSpeed: 3
+  turnDelay: 0.5
+  maxTailLength: 10
+  maxWaterLength: 5
+  timer: 0.1
+  maxTimer: 0.1
+  rTime: 0
+  tTime: 0
+  rb: {fileID: 5783480688211587738}
+  tailStart: {fileID: 2860166692004481904}
+  water: {fileID: 3494320736184451224, guid: bcfee2cf0154d5643884b5298995fea3, type: 3}
+  myObject: {fileID: 1338047634775597503}
+  spriteRenderer: {fileID: 392440952095537842}
+  headR: {fileID: -7088670883395842906, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headL: {fileID: 2326076706502517477, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headD: {fileID: -3244538411692950079, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  headU: {fileID: 7190913240618219596, guid: 7adae77e9eaf987428e6fd52a73f0a3c, type: 3}
+  currentTail: {fileID: 0}
+  sideTail: {fileID: 2288903646595463400, guid: 87c7a5b0a1c54db429c64e8abbc5b2e6,
+    type: 3}
+  topTail: {fileID: 2288903646595463400, guid: fc90121b1c31442468716faa97749997, type: 3}
+  consumableSpawnerScript: {fileID: 0}
 --- !u!1 &3024047245512774245
 GameObject:
   m_ObjectHideFlags: 0

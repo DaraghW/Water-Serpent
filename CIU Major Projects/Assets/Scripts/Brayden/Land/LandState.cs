@@ -8,9 +8,12 @@ public class LandState : MonoBehaviour
     public Color medHealthyColor;
     public Color unHealthyColor;
 
-    public float decayRate, decayAmount, nextDecay;
+    public float decayRate, decayAmount, nextDecay, nextHeal, healRate;
     public float fireDecayRate, fireDecayAmount, nextFireDecay;
     public float waterDecayRate, waterDecayAmount, nextWaterDecay;
+
+    public LandHealth myLand;
+    public GameObject myController;
 
     //An enumerator for our health states.
     public enum HealthState
@@ -33,6 +36,8 @@ public class LandState : MonoBehaviour
 
     void Start()
     {
+        myController = GameObject.FindGameObjectWithTag("MultiplayerGameController");
+        myLand = myController.GetComponentInChildren<LandHealth>();
         //Sets our health state to healthy.
         healthStates = HealthState.healthy;
     }
@@ -50,7 +55,6 @@ public class LandState : MonoBehaviour
         switch (healthStates)
         {
             case HealthState.healthy:
-                Heal();
                 break;
             case HealthState.mediumhealthy:
                 mySprite.color = medHealthyColor;
@@ -68,36 +72,29 @@ public class LandState : MonoBehaviour
     }
 
     //Handles how our ground decays when a hazard is on it.
-    void OnTriggerStay2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Fire" && Time.time > nextFireDecay)
+        if (collider.gameObject.tag == "Fire" && Time.time > nextFireDecay)
         {
             Debug.Log("Fired");
             nextFireDecay = Time.time + fireDecayRate;
             myHealth -= fireDecayAmount;
         }
 
-        if (collision.gameObject.tag == "Flood" && Time.time > nextWaterDecay)
+        if (collider.gameObject.tag == "Flood" && Time.time > nextWaterDecay)
         {
             nextWaterDecay = Time.time + waterDecayRate;
             myHealth -= waterDecayAmount;
         }
     }
 
-    void Heal()
-    {
-        //Every x seconds heal for a certain amount.
-        if (myHealth < 100)
-        {
-            myHealth += 0.05f;
-        }
-    }
 
     void MediumHeal()
     {
         //Every x seconds heal for a certain amount.
-        if (myHealth < 100)
+        if (myHealth < 100 && Time.time > nextHeal)
         {
+            nextHeal = Time.time + healRate;
             myHealth += 0.1f;
         }
     }
@@ -105,8 +102,9 @@ public class LandState : MonoBehaviour
     void BigBoyHeal()
     {
         //Every x seconds heal for a certain amount.
-        if (myHealth < 100)
+        if (myHealth < 100 && Time.time > nextHeal)
         {
+            nextHeal = Time.time + healRate;
             myHealth += 0.15f;
         }
     }
@@ -116,7 +114,7 @@ public class LandState : MonoBehaviour
         if(Time.time > nextDecay)
         {
             nextDecay = Time.time + decayRate;
-            LandHealth.health = LandHealth.health - decayAmount;
+            myLand.health = myLand.health - decayAmount;
         }   
     }
 

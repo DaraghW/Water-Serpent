@@ -94,11 +94,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myGameObject: {fileID: 7509759631618934979}
-  largeFire: {fileID: 4769837152344564175, guid: 21e9de625c318f546a8c5eb25dccf175,
-    type: 3}
-  decayRate: 1
-  decayAmount: 1
-  nextDecay: 0
 --- !u!50 &5211268845029702143
 Rigidbody2D:
   serializedVersion: 4
@@ -118,7 +113,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 3
 --- !u!212 &4687967709686034199
 SpriteRenderer:

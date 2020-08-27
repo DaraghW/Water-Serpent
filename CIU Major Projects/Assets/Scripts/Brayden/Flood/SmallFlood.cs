@@ -6,7 +6,7 @@ public class SmallFlood : MonoBehaviour
 {
     //A reference to our game object.
     public GameObject myGameObject;
-    public GameObject largeFlood;
+    public int speed;
 
     GameObject myController;
     COOPGameHandle scorekeeper;
@@ -50,6 +50,6 @@ public class SmallFlood : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.up * Time.deltaTime);
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 }

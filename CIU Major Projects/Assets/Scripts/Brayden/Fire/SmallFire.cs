@@ -6,12 +6,6 @@ public class SmallFire : MonoBehaviour
 {
     //A reference to our game object.
     public GameObject myGameObject;
-    public GameObject largeFire;
-
-    //The amount of health that will be taken from the land by the fire at certain intervals.
-    public float decayRate;
-    public float decayAmount;
-    public float nextDecay;
 
     GameObject myController;
     COOPGameHandle scorekeeper;
@@ -48,6 +42,11 @@ public class SmallFire : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Flood")
+        {
+            Destroy(myGameObject);
+        }
+
+        if (collision.gameObject.tag == "Water")
         {
             Destroy(myGameObject);
         }

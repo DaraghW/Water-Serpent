@@ -47,14 +47,20 @@ MonoBehaviour:
     type: 3}
   myParentObject: {fileID: 2706846084347429149}
   mySprites:
-  - {fileID: 21300000, guid: 0d05e312b53d07742ab0586b6b3510df, type: 3}
-  - {fileID: 21300000, guid: dd7892ec4e9f0094c935a8ece31cda26, type: 3}
-  - {fileID: 21300000, guid: 472138787219b94468978cb080a49fc9, type: 3}
-  - {fileID: 21300000, guid: cb95c559b4adfdd4f9d6062d4cb6620d, type: 3}
+  - {fileID: 21300000, guid: f3366f411e0303b4fbed439b192931b7, type: 3}
+  - {fileID: 21300000, guid: 87fb576a030ed5341879d6cdea39af2a, type: 3}
+  - {fileID: 21300000, guid: 2f391fc9f6d3a0042b1d38cc1f53c937, type: 3}
+  - {fileID: 21300000, guid: 87fb576a030ed5341879d6cdea39af2a, type: 3}
+  - {fileID: 21300000, guid: f3366f411e0303b4fbed439b192931b7, type: 3}
+  - {fileID: 21300000, guid: 2f391fc9f6d3a0042b1d38cc1f53c937, type: 3}
   myColors:
   - {r: 0.49502647, g: 1, b: 0, a: 1}
   - {r: 0, g: 1, b: 0.35719442, a: 1}
   - {r: 0.4028858, g: 0.8490566, b: 0, a: 1}
-  - {r: 0.77526164, g: 1, b: 0, a: 0}
-  xPos: {x: 0, y: 0}
-  yPos: {x: 0, y: 0}
+  - {r: 0.59672576, g: 1, b: 0.2028302, a: 1}
+  - {r: 0.46614859, g: 0.9433962, b: 0, a: 1}
+  - {r: 0, g: 0.6981132, b: 0.043828312, a: 1}
+  xPos: 1.28
+  yPos: 1.28
+  maxHeight: 31
+  maxLength: 31
