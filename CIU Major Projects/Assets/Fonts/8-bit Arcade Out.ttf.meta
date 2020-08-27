@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 94c93db5046288742aa201214672e51f
+guid: 042ece5b3c460854a92b5c659c238f7e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,8 @@ TrueTypeFontImporter:
   fontName: 8-bit Arcade Out
   fontNames:
   - 8-bit Arcade Out
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 94c93db5046288742aa201214672e51f, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
