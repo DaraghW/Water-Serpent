@@ -43,9 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47c55434cb2b24e8b8ba22c3f0cc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  consumableMaxCount: 6
+  consumableCurrentCount: 0
+  randConsumable: 0
   xPos: 0
   yPos: 0
-  consumableCount: 0
   consumables:
   - {fileID: 3393309005931646139, guid: c492f1f8b3edd8e40b8ad1968025060d, type: 3}
   - {fileID: 2634955255950440682, guid: 412d85b692350d145a3ba8a8f27611e1, type: 3}

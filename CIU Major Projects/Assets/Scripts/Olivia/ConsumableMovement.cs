@@ -41,8 +41,8 @@ public class ConsumableMovement : MonoBehaviour
     
     private void MakeRandomPosition()
     {
-        xPos = Random.Range(-29, 29);
-        yPos = Random.Range(-29, 29);
+        xPos = Random.Range(-14, 14);
+        yPos = Random.Range(-14, 14);
 
         moveSpots = new Vector2(xPos, yPos);
         waitTime = startWaitTime;

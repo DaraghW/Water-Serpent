@@ -18,8 +18,8 @@ public class ConsumableSpawner : MonoBehaviour
         if(consumableCurrentCount <= consumableMaxCount)
         {
             randConsumable = Random.Range(0, 3);
-            xPos = Random.Range(-29, 29);
-            yPos = Random.Range(-29, 29);
+            xPos = Random.Range(-14, 14);
+            yPos = Random.Range(-14, 14);
             Instantiate(consumables[randConsumable], new Vector3(xPos, yPos, 0), Quaternion.identity);
             consumableCurrentCount++;
         }
