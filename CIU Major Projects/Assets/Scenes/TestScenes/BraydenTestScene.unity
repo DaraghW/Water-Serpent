@@ -1296,16 +1296,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 341476242236387976, guid: 220fb68cbf33a9541a344a82941a3e34,
-        type: 3}
-      propertyPath: decayAmount
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 341476242236387976, guid: 220fb68cbf33a9541a344a82941a3e34,
-        type: 3}
-      propertyPath: healRate
-      value: 0.25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 220fb68cbf33a9541a344a82941a3e34, type: 3}
 --- !u!1001 &1245028698
@@ -1463,11 +1453,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
-    - target: {fileID: 7509759631618934979, guid: ae280fa2a7c35a34ab68125985a92fc1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1196764665720477757, guid: ae280fa2a7c35a34ab68125985a92fc1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1522,16 +1507,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211268845029702143, guid: ae280fa2a7c35a34ab68125985a92fc1,
-        type: 3}
-      propertyPath: m_SleepingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3739279909299453308, guid: ae280fa2a7c35a34ab68125985a92fc1,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae280fa2a7c35a34ab68125985a92fc1, type: 3}

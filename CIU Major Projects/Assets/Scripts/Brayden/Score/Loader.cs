@@ -17,29 +17,22 @@ public class Loader : MonoBehaviour
     public int[] myScores, newScores;
     public string[] myNames, newNames;
 
+    public List<int>highScores = new List<int>();
+    public List<string> scoreNames = new List<string>();
+
     //Calls our functions that get, set, sort & display the data as well as append new data.
     void Start()
     {
         GetPlayerData();
-        SortData();
-        SetNewScore();
-        SortData();
-        SetData();;
+        AddNewEntry();
         SetUI();
         SavePrefs();
     }
 
-    //Sorts our list of scores in order.
-    void SortData()
-    {
-        //Sorts the score array.
-        Array.Sort(myScores);
-    }
 
     //handles how we get our player data for our scores & names.
     void GetPlayerData()
     {
-
         for (int i = 0; i < newScores.Length; i++)
         {
             newScores[i] = PlayerPrefs.GetInt("newScore" + i.ToString());
@@ -48,48 +41,19 @@ public class Loader : MonoBehaviour
         {
             newNames[i] = PlayerPrefs.GetString("newName" + i.ToString());
         }
-
-        for (int j = 0; j < myScores.Length; j++)
-        {
-            myScores[j] = PlayerPrefs.GetInt("h" + j.ToString());
-        }
-
-        for (int j = 0; j < myScores.Length; j++)
-        {
-            myNames[j] = PlayerPrefs.GetString("n" + j.ToString());
-        }
-    }
-
-    void SetNewScore()
-    {
-        //If the new highscore is larger than the lowest score, delete the old score and add the new score + name.
-        for (int i = 0; i < newScores.Length; i++)
-        {
-            if (newScores[i] > myScores[i])
-            {
-                //Add new Entry
-                myScores[i] = newScores[i];
-                myNames[i] = newNames[i];
-            }
-        } 
     }
 
     void AddNewEntry()
-    { 
-        
-    }
-
-    //Loops through our code for each data entry in our score & name arrays. Sets our player prefs for each.
-    void SetData()
     {
-        for (int j = 0; j < myScores.Length; j++)
+        for (int i = 0; i < highScores.Count; i++)
         {
-            PlayerPrefs.SetInt("h" + j.ToString(), myScores[j]);
-        }
-
-        for (int j = 0; j < myScores.Length; j++)
-        {
-            PlayerPrefs.SetString("n" + j.ToString(), myNames[j]);
+            //Checks the elements of the list. If the new element is above a certain value it removes the old one from the list.
+            if (newScores[i] > highScores[i])
+            {
+                highScores.Insert(i, newScores[i]);
+                scoreNames.Insert(i, newNames[i]);
+                break;
+            }
         }
     }
 
@@ -98,12 +62,12 @@ public class Loader : MonoBehaviour
     {
         for (int i = 0; i < myScores.Length; i++)
         {
-            nameText[i].text = myNames[i].ToString();
+            nameText[i].text = scoreNames[i].ToString();
         }
 
         for (int i = 0; i < myScores.Length; i++)
         {
-            scoreText[i].text = myScores[i].ToString();
+            scoreText[i].text = highScores[i].ToString();
         }
     }
 

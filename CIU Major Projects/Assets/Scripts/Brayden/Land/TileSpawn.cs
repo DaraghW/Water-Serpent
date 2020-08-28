@@ -29,6 +29,7 @@ public class TileSpawn : MonoBehaviour
             }
         }
     }
+
     void UpdateTiles()
     {
         //Get all the sprite renderers.

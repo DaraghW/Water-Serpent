@@ -21,7 +21,6 @@ public class COOPGameHandle : MonoBehaviour
     public float nextScore, scoreRate, time;
     public Slider HPSlider;
 
-    public LandHealth myLand;
 
     //The time text.
     public Text myTimerText, endText;
@@ -29,11 +28,13 @@ public class COOPGameHandle : MonoBehaviour
 
     //Our pause & end of round panels, our players & player panels.
     public GameObject pausePanel, losePanel;
-    public GameObject[] myPlayers, myPanels, endScorePanels;
+    public GameObject[] myPlayers, myPanels, endScorePanels, endNamePanels;
+    public InputField[] myInputField;
 
     //The number of players, our scores, our time & scoring rates.
     int players;
     public int[] myScores, newScores;
+    public string[] myNames;
 
     // Start is called before the first frame update
     void Start()
@@ -163,9 +164,9 @@ public class COOPGameHandle : MonoBehaviour
         }
 
         //A check to make sure our health stays at 0 if it is reached.
-        if (myLand.health <= 0)
+        if (LandHealth.health <= 0)
         {
-            myLand.health = 0;
+            LandHealth.health = 0;
         }
 
         //Handles what happens when our health reaches 0.
@@ -195,6 +196,7 @@ public class COOPGameHandle : MonoBehaviour
         for (int i = 0; i < players; i++)
         {
             endScorePanels[i].SetActive(true);
+            endNamePanels[i].SetActive(true);
         }
     }
 
@@ -207,16 +209,30 @@ public class COOPGameHandle : MonoBehaviour
         }
         myTimerText.text = time.ToString("F0");
 
-        HPSlider.value = myLand.health;
+        HPSlider.value = LandHealth.health;
     }
 
     void SaveScores()
     {
         for (int i = 0; i < myScores.Length; i++)
         {
+            //take the current scores and assign them to the new scores array.
+            //Set the player prefs for the new scores.
             newScores[i] = myScores[i];
             PlayerPrefs.SetInt("newScore" + i, newScores[i]);
             PlayerPrefs.Save();
         }
+    }
+
+    public void SetName(int i)
+    {
+        string newName = myInputField[i].text;
+        PlayerPrefs.SetString("newName" + i.ToString(), newName);
+        Debug.Log("Saving " + newName);
+    }
+
+    public void ShowMyPanel(GameObject panel)
+    {
+        panel.SetActive(true);
     }
 }

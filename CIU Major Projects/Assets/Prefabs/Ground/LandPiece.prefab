@@ -70,8 +70,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -300
-  m_Sprite: {fileID: 21300000, guid: 0d05e312b53d07742ab0586b6b3510df, type: 3}
-  m_Color: {r: 0.40497655, g: 0.7254902, b: 0.0039215838, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f3366f411e0303b4fbed439b192931b7, type: 3}
+  m_Color: {r: 0.04212676, g: 0.735849, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -97,14 +97,17 @@ MonoBehaviour:
   medHealthyColor: {r: 1, g: 0.80092657, b: 0, a: 1}
   unHealthyColor: {r: 1, g: 0.35744843, b: 0.2216981, a: 1}
   decayRate: 0.2
-  decayAmount: 0.5
+  decayAmount: 0.1
   nextDecay: 0
+  nextHeal: 0
+  healRate: 0.25
   fireDecayRate: 0.2
   fireDecayAmount: 0.4
   nextFireDecay: 0
   waterDecayRate: 1.2
   waterDecayAmount: 2
   nextWaterDecay: 0
+  myController: {fileID: 0}
   healthStates: 0
   mySprite: {fileID: 8193728288797346325}
   myHealth: 100

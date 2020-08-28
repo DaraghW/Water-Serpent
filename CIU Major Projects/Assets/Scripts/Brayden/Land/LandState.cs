@@ -12,7 +12,6 @@ public class LandState : MonoBehaviour
     public float fireDecayRate, fireDecayAmount, nextFireDecay;
     public float waterDecayRate, waterDecayAmount, nextWaterDecay;
 
-    public LandHealth myLand;
     public GameObject myController;
 
     //An enumerator for our health states.
@@ -36,8 +35,6 @@ public class LandState : MonoBehaviour
 
     void Start()
     {
-        myController = GameObject.FindGameObjectWithTag("MultiplayerGameController");
-        myLand = myController.GetComponentInChildren<LandHealth>();
         //Sets our health state to healthy.
         healthStates = HealthState.healthy;
     }
@@ -114,7 +111,7 @@ public class LandState : MonoBehaviour
         if(Time.time > nextDecay)
         {
             nextDecay = Time.time + decayRate;
-            myLand.health = myLand.health - decayAmount;
+            LandHealth.health = LandHealth.health - decayAmount;
         }   
     }
 
