@@ -23,9 +23,7 @@ public class ConsumableMovement : MonoBehaviour
     {
         myRenderer = GetComponent<SpriteRenderer>();
         MakeRandomPosition();
-
         anim = GetComponent<Animator>();
-
     }
 
     void Update()
@@ -65,7 +63,6 @@ public class ConsumableMovement : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
-
         anim.SetBool("isWalking", true);
         anim.SetBool("isIdle", false);
     }
