@@ -20,3 +20,5 @@ public class UIControl : MonoBehaviour
         myButtons[i].Select();
     }
 }
+
+// Remember to chan ge line 265 to not specify max players = 1!
