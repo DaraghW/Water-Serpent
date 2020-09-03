@@ -18,6 +18,7 @@ public class COOPGameHandle : MonoBehaviour
 
     //A pause boolean to keep track of the pause states.
     public bool IsPaused = false;
+    //Our timer, rate we gain score and a reference to the rate Cooldown.
     public float nextScore, scoreRate, time;
     public Slider HPSlider;
 
@@ -29,21 +30,21 @@ public class COOPGameHandle : MonoBehaviour
     //Our pause & end of round panels, our players & player panels.
     public GameObject pausePanel, losePanel;
     public GameObject[] myPlayers, myPanels, endScorePanels, endNamePanels;
-    public InputField[] myInputField;
+    public InputField myInputField;
 
     //The number of players, our scores, our time & scoring rates.
     int players;
-    public int[] myScores, newScores;
-    public string[] myNames;
+    public int[] myScores;
+    int t;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         GetPlayerPrefs();
         PlayerSwitch(players);
     }
 
-    void Update()
+    public void Update()
     {
         //If Escape is pressed, then change the game state depending if the game is already paused or not.
         if (Input.GetKeyDown(KeyCode.Escape) && IsPaused == false)
@@ -191,13 +192,14 @@ public class COOPGameHandle : MonoBehaviour
         }
     }
 
+    //Sets our end score panels active (name and scores)
     void SetEndScoresActive()
     {
         for (int i = 0; i < players; i++)
         {
             endScorePanels[i].SetActive(true);
-            endNamePanels[i].SetActive(true);
         }
+        endNamePanels[0].SetActive(true);
     }
 
     //Changes a bunch of the UI for the timer, score & health. Changes the value for our health slider.
@@ -212,23 +214,25 @@ public class COOPGameHandle : MonoBehaviour
         HPSlider.value = LandHealth.health;
     }
 
+    //Saves our scores to an integer and appends it to a list.
     void SaveScores()
     {
         for (int i = 0; i < myScores.Length; i++)
         {
             //take the current scores and assign them to the new scores array.
             //Set the player prefs for the new scores.
-            newScores[i] = myScores[i];
-            PlayerPrefs.SetInt("newScore" + i, newScores[i]);
-            PlayerPrefs.Save();
+            t += myScores[i];
+            PlayerPrefs.SetInt("newScore", t);
         }
+        PlayerPrefs.Save();
     }
 
-    public void SetName(int i)
+    public void SetName()
     {
-        string newName = myInputField[i].text;
-        PlayerPrefs.SetString("newName" + i.ToString(), newName);
+        string newName = myInputField.text;
+        PlayerPrefs.SetString("newName", newName);
         Debug.Log("Saving " + newName);
+        PlayerPrefs.Save();
     }
 
     public void ShowMyPanel(GameObject panel)

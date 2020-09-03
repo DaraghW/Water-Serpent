@@ -8,6 +8,7 @@ public class TileSpawn : MonoBehaviour
     public GameObject myTilePiece, myParentObject;
     SpriteRenderer myRenderer;
     public Sprite[] mySprites;
+    public GameObject[] myEnvironment;
     public Color[] myColors;
     public float xPos, yPos;
     public int maxHeight, maxLength;
@@ -24,6 +25,12 @@ public class TileSpawn : MonoBehaviour
         {
             for (int i = 0; i < maxLength; i++)
             {
+                int t = Random.Range(0, 100);
+                if (t >= 90)
+                {
+                    int r = Random.Range(0, myEnvironment.Length - 1);
+                    Instantiate(myEnvironment[r], myParentObject.transform.position + new Vector3(i * xPos, j * yPos, 0), Quaternion.identity);
+                }
                 Instantiate(myTilePiece, myParentObject.transform.position + new Vector3(i * xPos, j * yPos, 0), Quaternion.identity);
                 UpdateTiles();
             }

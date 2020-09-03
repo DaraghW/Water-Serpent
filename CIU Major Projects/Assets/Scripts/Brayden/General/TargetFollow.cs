@@ -27,7 +27,7 @@ public class TargetFollow : MonoBehaviour
 
     void TrackTargets()
     {
-        for (int i = 0; i < players; i++)
+        for (int i = 0; i < players - 1; i++)
         {
             if (Vector2.Distance(transform.position, targets[i].position) > maxDistance && targets[i].gameObject.activeInHierarchy == true)
             {
