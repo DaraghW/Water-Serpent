@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float moveSpeed, regSpeed, turnDelay, maxTailLength,
-        maxWaterLength, timer, maxTimer, rTime, tTime;
+        maxWaterLength, timer, maxTimer, boostTime, tTime;
     
     private bool canTurn;
 
@@ -68,13 +68,13 @@ public class Movement : MonoBehaviour
         }
 
         //Rat 
-        rTime -= 1 * Time.deltaTime;
-        if (rTime >= 0)
+        boostTime -= 1 * Time.deltaTime;
+        if (boostTime >= 0)
         {
             moveSpeed = 5;
         }
 
-        if (rTime <= 0)
+        if (boostTime <= 0)
         {
             moveSpeed = regSpeed;
         }
@@ -317,7 +317,8 @@ public class Movement : MonoBehaviour
 
     void Insect()
     {
-        rTime = 3;
+        boostTime = 3;
+        maxTailLength += 4;
         print("bug eaten");
     }
 

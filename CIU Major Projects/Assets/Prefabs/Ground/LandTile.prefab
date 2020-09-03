@@ -56,7 +56,7 @@ MonoBehaviour:
   myEnvironment:
   - {fileID: 2708564587459215273, guid: 90e6f675bc870084fb9b5e18054b9d55, type: 3}
   - {fileID: 4307816673381405783, guid: 2af9d24b66bf4bd41979082aa08d5373, type: 3}
-  - {fileID: 0}
+  - {fileID: 1463710999434473209, guid: 281b9a2c550e60f49a5b66d888afc1ff, type: 3}
   - {fileID: 3576678927267865567, guid: 1263b0879292b8d469bbd71c096b41ec, type: 3}
   - {fileID: 4921399777118858638, guid: 20c49ff7bd59bb84daf046c7bf641501, type: 3}
   - {fileID: 1174143157660039996, guid: 5fbaf525027642f458a0921c5c286cf3, type: 3}
@@ -65,7 +65,6 @@ MonoBehaviour:
   - {fileID: 6706362744827449045, guid: dc66320cfa5ce3345a3133312617b9d7, type: 3}
   - {fileID: 2655413656546900305, guid: aa9a4b9cd9b8a324a896bda76b65661e, type: 3}
   - {fileID: 867851409512859481, guid: b815b918de2c59844a5c6cd8ea7fdaaf, type: 3}
-  - {fileID: 1463710999434473209, guid: 281b9a2c550e60f49a5b66d888afc1ff, type: 3}
   myColors:
   - {r: 0.468345, g: 0.8207547, b: 0.36391953, a: 1}
   - {r: 0.4666667, g: 0.8196079, b: 0.3647059, a: 1}

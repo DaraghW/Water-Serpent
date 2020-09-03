@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    public Animator[] transition;
+    public float transTime;
     public void CoopScene(int playerAmount)
     {
         //Saves our playerAmount int to whatever amount is chosen to player prefs.
@@ -56,5 +58,33 @@ public class SceneChange : MonoBehaviour
     public void SavePrefs()
     {
         PlayerPrefs.Save();
+    }
+
+    public void LoadNextLevel(int i)
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + i));
+    }
+
+    IEnumerator LoadLevel(int i)
+    {
+        //Play our animation.
+        for (int e = 0; e <= transition.Length; e++)
+        {
+            transition[e].SetTrigger("Start");
+        }
+
+        //Wait
+        yield return new WaitForSeconds(transTime);
+
+        //LoadScene
+        SceneManager.LoadScene(i);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            MainMenu();
+        }
     }
 }

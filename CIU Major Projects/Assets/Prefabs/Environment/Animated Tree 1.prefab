@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 3576678927267865564}
   - component: {fileID: 3576678927267865565}
   - component: {fileID: 3576678927267865566}
+  - component: {fileID: -157217087420280983}
   m_Layer: 0
-  m_Name: tree 1_0
+  m_Name: Animated Tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,3 +101,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-157217087420280983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3576678927267865567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc8362d3e4e2e943b1abbc8dd061a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentGameObject: {fileID: 0}
+  checkRate: 0.5
+  nextCheck: 0.25
+  myRenderer: {fileID: 3576678927267865565}
+  isStatic: 1
