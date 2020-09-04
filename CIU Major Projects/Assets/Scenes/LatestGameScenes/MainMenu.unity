@@ -711,6 +711,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8134005951433213116, guid: 4e1c304263d0bff4989960205c6ba855,
+        type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134005951433213116, guid: 4e1c304263d0bff4989960205c6ba855,
+        type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134005951433213116, guid: 4e1c304263d0bff4989960205c6ba855,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134005951433213116, guid: 4e1c304263d0bff4989960205c6ba855,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e1c304263d0bff4989960205c6ba855, type: 3}
 --- !u!1001 &1017270344
@@ -1432,6 +1452,18 @@ PrefabInstance:
     - target: {fileID: 1476807594, guid: 1e44f656b938a7c4d9fdbaf025527ce8, type: 3}
       propertyPath: isOpen
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 35402640, guid: 1e44f656b938a7c4d9fdbaf025527ce8, type: 3}
+      propertyPath: m_Text
+      value: 'Movement
+
+        Player 1 - WASD
+
+        Player 2 - TFGH
+
+        Player 3 - IJKL
+
+        Player 4  - Arrow Keys'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e44f656b938a7c4d9fdbaf025527ce8, type: 3}

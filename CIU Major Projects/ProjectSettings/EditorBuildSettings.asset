@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OldGameScenes/MainGame.unity
     guid: 10135f7c767996e4097a49112bae482f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OldGameScenes/MultiplayerScene.unity
     guid: 76344c23101a4764d93a8e3e0de0e06e
   - enabled: 1
@@ -20,13 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LatestGameScenes/Co-OpScene.unity
     guid: e150d1164d561004e87d93e43d44e91e
-  - enabled: 1
-    path: Assets/Scenes/LatestGameScenes/VS-Scene.unity
+  - enabled: 0
+    path: Assets/Scenes/OldGameScenes/VS-Scene.unity
     guid: 9abf378f14948f240b605c401d6f9d00
-  - enabled: 1
-    path: Assets/Scenes/Game Scenes/Co-OpScene 1.unity
-    guid: 7f17b0180e0687d4da19959af32756cd
-  - enabled: 1
-    path: Assets/Scenes/Game Scenes/VS-Scene 1.unity
-    guid: a3b7aad6b86d8fa40abf9ceb1e316eec
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

@@ -182,7 +182,6 @@ public class COOPGameHandle : MonoBehaviour
     void EndOfRound()
     {
         myStates = GameState.Lose;
-        Time.timeScale = 0f;
         losePanel.SetActive(true);
         endText.text = "You lasted a total of " + time.ToString() + " seconds";
 
